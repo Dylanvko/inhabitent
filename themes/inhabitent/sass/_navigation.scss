@@ -31,6 +31,8 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	font-family: Novecento Sans Web,sans-serif;
+	text-transform: uppercase;
 
 	ul {
 		display: none;
@@ -78,6 +80,7 @@ a {
 	}
 	li {
 		float: left;
+		padding-left: 1.5rem;
 		position: relative;
 
 		&:hover > a,
@@ -86,6 +89,7 @@ a {
 	}
 	a {
 		display: block;
+		color: #248a83;
 		text-decoration: none;
 	}
 
@@ -93,6 +97,64 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+}
+
+a {
+	color: #248a83;
+	text-decoration: none;
+}
+
+
+.site-header {
+	background-color: hsla(0,0%,100%,.85);
+	border-bottom: 1px solid #e1e1e1;
+	padding: .5rem 0;
+	position: fixed;
+	transition: top .5s linear;
+	width: 100%;
+	z-index: 3;
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+	}
+
+	h1 {
+		background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px;
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px;
+	}
+}
+
+.site-footer {
+	background: url(../../images/dark-wood@2x.png);
+	background-image: url(../../images/dark-wood@2x.png);
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: 512px 512px;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	background-size: 512px 512px;
+	color:#FFFFFF;
+}
+
+
+.site-info {
+	font-family: Novecento Sans Web,sans-serif;
+	padding: 1.5rem 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 /* Small menu. */

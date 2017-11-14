@@ -2,13 +2,29 @@
 # Widgets
 --------------------------------------------------------------*/
 
+.widget-area {
+	padding-left: 5%;
+	width: 28%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
 .widget {
 	margin: 0 0 $base__space-unit;
+
+	ul {
+		list-style-type: none;
+	}
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
+}
+
+.widget h2 {
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 /* Search widget. */

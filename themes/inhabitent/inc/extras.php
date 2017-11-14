@@ -38,7 +38,7 @@ add_action('login_head', 'inhabitent_login_logo');
 // Change WP url to inhabitent
 
 function inhabitent_replace_url( $url ) {
-	return get_bloginfo( 'url' );
+	return get_bloginfo( 'url' ); //insert url here
 }
 add_filter( 'login_headerurl', 'inhabitent_replace_url' );
 

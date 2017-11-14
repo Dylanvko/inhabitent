@@ -4,6 +4,19 @@
 
 /* Posts and pages */
 
+.site-content {
+	padding-top: 50px;
+
+	.content-area {
+
+
+		.site-main {
+			
+		}
+	}
+
+}
+
 .sticky {
 	display: block;
 }
@@ -19,6 +32,10 @@
 .single .byline,
 .group-blog .byline {
 	display: inline;
+}
+
+.entry-title {
+	display: none;
 }
 
 .page-content,

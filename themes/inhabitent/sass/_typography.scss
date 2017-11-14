@@ -7,22 +7,37 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1);
-	line-height: $font__line-height-body;
+	color: #404040;
+	font-family: Merriweather;
+	font-size: 1rem;
+	line-height: 1.75;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: Novecento, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h1, h2 {
+	line-height: 1.25;
+}
+
+h2 {
+	color: #2f1339;
+	font-size: 33.6px;
+	font-size: 2.1rem;
+	margin-bottom: 1.5rem;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	margin-bottom: 1.5rem;
 }
 
 dfn, cite, em, i {
@@ -65,4 +80,38 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+.footer-blocks {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.footer-block-item {
+	margin: 3rem 0;
+	padding-right: 1.5rem;
+	width: 25%;
+}
+
+.footer-block-item:last-child {
+	padding-right: 0;
+	width: 50%;
+}
+
+.footer-blocks p {
+	margin-bottom: .5rem;
+}
+
+.footer-blocks h3 {
+	color: #d99054;
+	font-size: 19.2px;
+	font-size: 1.2rem;
+	margin-bottom: .75rem;
+	text-transform: uppercase;
+}
+
+.site-footer a {
+	color: #fff;
+	text-decoration: none;
 }

@@ -3,3 +3,22 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.home .home-hero {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  margin-right: none;
+}
