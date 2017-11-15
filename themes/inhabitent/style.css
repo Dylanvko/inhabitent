@@ -724,6 +724,23 @@ a {
 .site-content {
   padding-top: 50px; }
 
+.home .hfeed.site .site-content ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .home .hfeed.site .site-content ul img {
+    max-height: 250px;
+    max-width: none;
+    width: auto; }
+  .home .hfeed.site .site-content ul h1 {
+    line-height: 1.25;
+    font-size: 1.3rem; }
+  .home .hfeed.site .site-content ul span, .home .hfeed.site .site-content ul a {
+    font-size: 0.75rem; }
+
 .sticky {
   display: block; }
 

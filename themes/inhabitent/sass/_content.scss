@@ -17,6 +17,37 @@
 
 }
 
+.home {
+
+	.hfeed.site {
+
+		.site-content {
+
+			ul {
+				list-style: none;
+				display: flex;
+				align-content: center;
+
+				img {
+					max-height: 250px;
+					max-width: none;
+					width: auto;
+				}
+
+				h1 {
+					line-height: 1.25;
+					font-size: 1.3rem;
+				}
+
+				span, a {
+					font-size: 0.75rem;
+				}
+			}
+		}
+	}
+}
+
+
 .sticky {
 	display: block;
 }
