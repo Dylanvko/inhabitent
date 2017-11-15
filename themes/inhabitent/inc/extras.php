@@ -48,3 +48,29 @@ function inhabitent_logo_url_title(){
 	return 'inhabitent';
 }
 add_filter('login_headertitle', 'inhabitent_logo_url_title');
+
+// About hero image
+function inhabitent_dynamic_css() {
+	if ( ! is_page_template( 'about.php') ) {
+		return;
+	}
+
+	$image = CFS()->get( 'about_header_image' );
+
+	if (! $image ) {
+		return;
+	}
+
+	$hero_css = ".page-template-about .entry-header {
+		height: 100vh;
+		width: auto;
+		background:
+			linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+			url({$image}) no-repeat center bottom;
+		background-size: cover, cover; 
+	}";
+
+	wp_add_inline_style( 'red-starter-style', $hero_css );
+}
+add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
+

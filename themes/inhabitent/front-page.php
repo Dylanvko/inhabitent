@@ -39,5 +39,25 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php
+   $args = array( 'post_type' => 'post', 'order' => 'DES', 'posts_per_page' => 3 );
+   $products = new WP_Query( $args ); // instantiate our object
+?>
+<?php if ( $products->have_posts() ) : ?>
+   <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+	 		
+
+			<h1><?php the_title(); ?></h1>
+			<?php the_post_thumbnail('large'); ?>
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
+			<a href='<?php the_permalink(); ?>'>Read entry</a>
+ 
+
+   <?php endwhile; ?>
+   <?php wp_reset_postdata(); ?>
+<?php else : ?>
+      <h2>Nothing found!</h2>
+<?php endif; ?>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

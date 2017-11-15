@@ -60,7 +60,7 @@
 				</div>
 				<div class="site-info">
 					<div class="container">
-						Copyright © 2016 Inhabitent
+						Copyright © 2017 Inhabitent
 					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
