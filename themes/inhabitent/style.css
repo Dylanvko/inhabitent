@@ -49,7 +49,14 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 article,
 aside,
@@ -274,7 +281,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: Merriweather;
+  font-family: Merriweather Web,serif;
   font-size: 1rem;
   line-height: 1.75; }
 
@@ -726,9 +733,6 @@ a {
 
 .home .hfeed.site .site-content ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-line-pack: center;
       align-content: center; }
   .home .hfeed.site .site-content ul img {
@@ -740,6 +744,52 @@ a {
     font-size: 1.3rem; }
   .home .hfeed.site .site-content ul span, .home .hfeed.site .site-content ul a {
     font-size: 0.75rem; }
+
+.product-info.container {
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .product-info.container h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center; }
+  .product-info.container .product-type-blocks {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center; }
+    .product-info.container .product-type-blocks .product-type-block-wrapper {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 23.5%;
+              flex: 0 1 23.5%;
+      max-width: 23.5%;
+      padding: .75rem; }
+      .product-info.container .product-type-blocks .product-type-block-wrapper img {
+        height: 70px;
+        width: 70px; }
+      .product-info.container .product-type-blocks .product-type-block-wrapper a {
+        background: #248a83;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 14.4px;
+        font-size: .9rem;
+        line-height: 1;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .product-info.container .product-type-blocks .product-type-block-wrapper p {
+        margin-bottom: 1.5rem;
+        color: #404040;
+        font-family: Merriweather;
+        font-size: 1.1rem;
+        line-height: 1.75; }
 
 .sticky {
   display: block; }
