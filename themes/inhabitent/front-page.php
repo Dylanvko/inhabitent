@@ -69,15 +69,18 @@ get_header(); ?>
    $args = array( 'post_type' => 'post', 'order' => 'DES', 'posts_per_page' => 3 );
    $products = new WP_Query( $args ); // instantiate our object
 ?>
+
+<div class="journal-block-wrapper">
 <ul>
 <?php if ( $products->have_posts() ) : ?>
-   <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+	 <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+	 
+
 	 		
 			<li>
 			<div class='journal-container'>
 			<?php the_post_thumbnail('large'); ?> </div>
-			<?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
-			<div class='journal-entry-wrapper'><h1><?php the_title(); ?></h1>
+			<div class='journal-entry-wrapper'><?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span><h3><?php the_title(); ?></h3>
 			<a href='<?php the_permalink(); ?>'>Read Entry</a></div>
 			</li>
 
@@ -88,5 +91,6 @@ get_header(); ?>
       <h2>Nothing found!</h2>
 <?php endif; ?>
 </ul>
+</div>
 
 <?php get_footer(); ?>
