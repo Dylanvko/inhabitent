@@ -8,7 +8,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: Merriweather Web,serif;
+	font-family: Merriweather Web, serif;
 	font-size: 1rem;
 	line-height: 1.75;
 }
@@ -16,7 +16,6 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
 	font-family: Novecento, sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -30,7 +29,6 @@ h2 {
 	color: #2f1339;
 	font-size: 33.6px;
 	font-size: 2.1rem;
-	margin-bottom: 1.5rem;
 }
 
 /* Copy */
@@ -82,9 +80,13 @@ big {
 	font-size: 125%;
 }
 
+.footer-blocks-container {
+	width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .footer-blocks {
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 

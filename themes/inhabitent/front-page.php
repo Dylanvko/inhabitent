@@ -80,7 +80,7 @@ get_header(); ?>
 			<li>
 			<div class='journal-container'>
 			<?php the_post_thumbnail('large'); ?> </div>
-			<div class='journal-entry-wrapper'><?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span><h3><?php the_title(); ?></h3>
+			<div class='journal-entry-wrapper'><div class='entry-metadata'><?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span></div><h3><?php the_title(); ?></h3>
 			<a href='<?php the_permalink(); ?>'>Read Entry</a></div>
 			</li>
 
