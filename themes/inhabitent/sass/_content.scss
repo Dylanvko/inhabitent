@@ -422,6 +422,31 @@
 		}
 	}
 
+.archive {
+	
+	.site-content {
+		display: flex;
+		width: 1120px;
+		margin-right: auto;
+		margin-left: auto;
+
+		.content-area {
+			align-content: center;
+			padding: 0px 60px 0px 0px;
+			width: 73%;
+
+			img {
+				width: 100%;
+			}
+
+		}
+
+		.widget-area {
+			min-width: 27%;
+			border-left: 1px solid #e1e1e1;
+		}
+	}
+}
 
 
 
