@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="home-hero">
-				<img src="">
+				<img class='home-hero-logo' src='../../inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg' alt='White inhabitent logo'>
 			</section>
 
 		<?php if ( have_posts() ) : ?>

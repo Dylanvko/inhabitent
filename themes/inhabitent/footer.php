@@ -54,14 +54,16 @@
 							</p>
 						</div>								
 					<div class="footer-block-item"></div>	
+</div>
 					<div class="text-logo">
-						
+						<a href=''> 
+						<img class='home-hero-logo' src='../../inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg' alt='White inhabitent logo'>
+						</a>
 					</div>
-				</div>
+					</div>
 				<div class="site-info">
 					<div class="container">
 						Copyright © 2017 Inhabitent
-					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

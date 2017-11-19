@@ -27,12 +27,11 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
 	width: 100%;
 	font-family: Novecento, sans-serif;
 	text-transform: uppercase;
+	display: flex;
+	flex-direction: row-reverse;
 
 	ul {
 		display: none;
@@ -149,6 +148,11 @@ a {
 	color:#FFFFFF;
 }
 
+.text-logo {
+	width: 50%;
+	display: flex;
+	flex-direction: row-reverse;
+}
 
 .site-info {
 	font-family: Novecento, sans-serif;
@@ -191,4 +195,46 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.footer-blocks-container {
+	width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1120px;
+}
+
+.footer-blocks {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1120px;
+}
+
+.footer-block-item {
+	margin: 3rem 0;
+	padding-right: 1.5rem;
+	width: 25%;
+}
+
+.footer-block-item:last-child {
+	padding-right: 0;
+	width: 50%;
+}
+
+.footer-blocks p {
+	margin-bottom: .5rem;
+}
+
+.footer-blocks h3 {
+	color: #d99054;
+	font-size: 19.2px;
+	font-size: 1.2rem;
+	margin-bottom: .75rem;
+	text-transform: uppercase;
+}
+
+.site-footer a {
+	color: #fff;
+	text-decoration: none;
 }
