@@ -8,6 +8,10 @@
 	margin-top: 3.1rem;
 }
 
+.our-team {
+	margin-bottom: 0;
+}
+
 .blog {
 
 	.site-content {
@@ -432,7 +436,7 @@
 
 		.content-area {
 			align-content: center;
-			padding: 0px 60px 0px 0px;
+			padding: 30px 60px 0px 0px;
 			width: 73%;
 
 			img {
@@ -444,6 +448,15 @@
 		.widget-area {
 			min-width: 27%;
 			border-left: 1px solid #e1e1e1;
+
+			ul {
+				padding-left: 0;
+				margin-left: 0;
+
+				a {
+					color: #248A83;
+				}
+			}
 		}
 	}
 }
@@ -460,6 +473,7 @@
 
 .hentry {
 	margin: 0 0 $base__space-unit;
+	margin-bottom: 6rem;
 }
 
 .updated:not(.published){
@@ -475,6 +489,10 @@
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+
+	a {
+		color: #000000;
+	}
 }
 
 .page-links {

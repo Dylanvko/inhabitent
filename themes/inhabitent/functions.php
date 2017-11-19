@@ -100,6 +100,20 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
+add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
+
+
+//Show 16 products on shop page.
+function rc_modify_query_limit_posts( $query ) {
+
+ if( ! is_admin() && $query->is_main_query() ) {
+
+	 $query->set('posts_per_page', '16');
+
+ }
+
+}
+
 /**
  * Custom template tags for this theme.
  */

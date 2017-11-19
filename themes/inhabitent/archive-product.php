@@ -15,7 +15,7 @@ get_header(); ?>
 			<header class="page-header">
 			
 			
-            <h2>Shop Stuff</h2>
+            <h2 class='shop-title'>Shop Stuff</h2>
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product-type',
@@ -45,17 +45,18 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 		<li class='product-grid-item'>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class='thumbnail-wrapper'>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 					<?php if ( has_post_thumbnail() ) : ?>
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a></div>
 					<?php endif; ?>
-
-					<h2>
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-						<span>.....................</span>
+				<div class='product-meta'>
+					<h2 class='product-info'>
+						<span><?php the_title(); ?></span>
+						<span>................................</span>
 						<span><?php echo CFS()->get( 'price' ); ?></span>
-					</h2>
+					</h2></div>
 							 </li>
 
 		</article><!-- #post-## -->
