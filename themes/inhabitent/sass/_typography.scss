@@ -35,6 +35,7 @@ h2 {
 
 p {
 	margin-bottom: $base__space-unit;
+	line-height: 1.75;
 }
 
 dfn, cite, em, i {
@@ -77,42 +78,4 @@ mark, ins {
 
 big {
 	font-size: 125%;
-}
-
-.footer-blocks-container {
-	width: 1120px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.footer-blocks {
-	display: flex;
-}
-
-.footer-block-item {
-	margin: 3rem 0;
-	padding-right: 1.5rem;
-	width: 25%;
-}
-
-.footer-block-item:last-child {
-	padding-right: 0;
-	width: 50%;
-}
-
-.footer-blocks p {
-	margin-bottom: .5rem;
-}
-
-.footer-blocks h3 {
-	color: #d99054;
-	font-size: 19.2px;
-	font-size: 1.2rem;
-	margin-bottom: .75rem;
-	text-transform: uppercase;
-}
-
-.site-footer a {
-	color: #fff;
-	text-decoration: none;
 }

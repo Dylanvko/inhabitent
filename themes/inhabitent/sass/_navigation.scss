@@ -186,15 +186,21 @@ a {
 	}
 
 	.nav-previous {
+		display: none;
 		float: left;
 		width: 50%;
 	}
 
 	.nav-next {
+		display: none;
 		float: right;
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.logged-in-as {
+	display: none;
 }
 
 .footer-blocks-container {
@@ -212,7 +218,7 @@ a {
 }
 
 .footer-block-item {
-	margin: 3rem 0;
+	margin: 1.5rem 0;
 	padding-right: 1.5rem;
 	width: 25%;
 }

@@ -301,7 +301,8 @@ h2 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  line-height: 1.75; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -338,39 +339,6 @@ mark, ins {
 
 big {
   font-size: 125%; }
-
-.footer-blocks-container {
-  width: 1120px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.footer-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.footer-block-item {
-  margin: 3rem 0;
-  padding-right: 1.5rem;
-  width: 25%; }
-
-.footer-block-item:last-child {
-  padding-right: 0;
-  width: 50%; }
-
-.footer-blocks p {
-  margin-bottom: .5rem; }
-
-.footer-blocks h3 {
-  color: #d99054;
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  margin-bottom: .75rem;
-  text-transform: uppercase; }
-
-.site-footer a {
-  color: #fff;
-  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -647,15 +615,20 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
+  display: none;
   float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
+  display: none;
   float: right;
   text-align: right;
   width: 50%; }
+
+.logged-in-as {
+  display: none; }
 
 .footer-blocks-container {
   width: 1120px;
@@ -672,7 +645,7 @@ a {
   width: 1120px; }
 
 .footer-block-item {
-  margin: 3rem 0;
+  margin: 1.5rem 0;
   padding-right: 1.5rem;
   width: 25%; }
 
@@ -782,7 +755,7 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .site-content {
-  margin-top: 3rem; }
+  margin-top: 3.1rem; }
 
 .blog .site-content {
   display: -webkit-box;
@@ -796,17 +769,20 @@ a {
   margin-right: auto; }
   .blog .site-content .content-area {
     -ms-flex-line-pack: center;
-        align-content: center; }
+        align-content: center;
+    padding: 60px 60px 0px 0px; }
     .blog .site-content .content-area img {
       width: 100%; }
   .blog .site-content .widget-area {
-    min-width: 27%; }
+    min-width: 27%;
+    border-left: 1px solid #e1e1e1; }
     .blog .site-content .widget-area i {
       margin-right: 0.5rem; }
 
 .blog ul {
-  padding-left: 0rem;
-  padding-right: 0rem; }
+  padding-left: 0;
+  padding-right: 0rem;
+  margin-left: 0; }
 
 .home .hfeed.site .site-content ul {
   list-style: none;
@@ -884,11 +860,35 @@ a {
   .journal-container img {
     width: 360px; }
 
+.entry-header {
+  position: relative; }
+  .entry-header h2 {
+    background-color: #248a83;
+    color: #ffffff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: .75rem 1.5rem;
+    margin-top: 2.25rem;
+    max-width: 75%; }
+  .entry-header a {
+    color: #FFFFFF; }
+
+.entry-meta {
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase;
+  background-color: #248a83;
+  color: #fff;
+  display: inline-block;
+  padding: 0.2rem 1.5rem;
+  position: absolute;
+  bottom: 8px;
+  right: 0px; }
+
 .journal-entry-wrapper {
   padding: 0.75rem; }
-  .journal-entry-wrapper .entry-metadata {
-    font-family: Merriweather, serif;
-    padding-bottom: 0.2rem; }
   .journal-entry-wrapper h3 {
     font-size: 1.3rem;
     line-height: 1.5rem;
@@ -951,6 +951,100 @@ a {
         font-size: 1.1rem;
         line-height: 1.75; }
 
+.read-more-button {
+  border: 1px solid #000000;
+  color: #000000;
+  font-family: Novecento, sans-serif;
+  padding: 0.75rem 1rem; }
+
+.read-more-button:hover {
+  border: none;
+  color: #FFFFFF;
+  background-color: #248a83;
+  font-family: Novecento, sans-serif;
+  padding: 0.75rem 1rem; }
+
+.read-more-button:visited {
+  text-decoration: none; }
+
+.single-post .hfeed.site .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .single-post .hfeed.site .site-content .entry-footer {
+    font-family: Novecento, sans-serif;
+    text-transform: uppercase; }
+    .single-post .hfeed.site .site-content .entry-footer .cat-links {
+      margin-right: 1.5rem; }
+  .single-post .hfeed.site .site-content .widget-area {
+    min-width: 27%;
+    border-left: 1px solid #e1e1e1; }
+    .single-post .hfeed.site .site-content .widget-area ul {
+      margin-left: 0;
+      padding-left: 0; }
+    .single-post .hfeed.site .site-content .widget-area i {
+      margin-right: 0.5rem; }
+  .single-post .hfeed.site .site-content .content-area {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 60px 60px 0px 0px;
+    width: 73%; }
+    .single-post .hfeed.site .site-content .content-area .BodyA {
+      font-family: Merriweather;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #404040; }
+    .single-post .hfeed.site .site-content .content-area .entry-header {
+      position: relative; }
+      .single-post .hfeed.site .site-content .content-area .entry-header h1 {
+        background-color: #248a83;
+        color: #ffffff;
+        font-size: 33.6px;
+        font-size: 2.1rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: .75rem 1.5rem;
+        margin-top: 2.25rem;
+        max-width: 75%; }
+      .single-post .hfeed.site .site-content .content-area .entry-header a {
+        color: #FFFFFF; }
+    .single-post .hfeed.site .site-content .content-area .single-entry-meta {
+      font-family: Novecento, sans-serif;
+      text-transform: uppercase;
+      background-color: #248a83;
+      color: #fff;
+      display: inline-block;
+      padding: 0.2rem 1.5rem;
+      position: absolute;
+      bottom: 8px;
+      right: 0px; }
+    .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper {
+      padding: 0.75rem; }
+      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper h3 {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        color: #248A83;
+        margin-top: 0;
+        padding-bottom: 0.5rem; }
+      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper h3:hover {
+        color: #2f1339;
+        cursor: pointer; }
+      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper a {
+        font-family: Novecento; }
+
+.single-post .hfeed.site img {
+  width: 100%; }
+
+.post-62 {
+  display: none; }
+
 .sticky {
   display: block; }
 
@@ -963,9 +1057,6 @@ a {
 .single .byline,
 .group-blog .byline {
   display: inline; }
-
-.entry-title {
-  display: none; }
 
 .page-content,
 .entry-content,
