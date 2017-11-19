@@ -995,6 +995,31 @@ a {
         align-content: center;
     padding: 60px 60px 0px 0px;
     width: 73%; }
+    .single-post .hfeed.site .site-content .content-area .comments-area .comment-list {
+      margin-left: 0;
+      padding-left: 0; }
+    .single-post .hfeed.site .site-content .content-area .comments-area .comment-body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: Merriweather; }
+    .single-post .hfeed.site .site-content .content-area .comments-area .comment-content {
+      border-bottom: 1px solid lightgrey;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding: 1rem; }
+      .single-post .hfeed.site .site-content .content-area .comments-area .comment-content .fn {
+        font-style: normal;
+        font-weight: 600; }
+    .single-post .hfeed.site .site-content .content-area .comments-area .comment-metadata {
+      color: grey; }
+    .single-post .hfeed.site .site-content .content-area .comments-area a {
+      color: #248A83; }
+    .single-post .hfeed.site .site-content .content-area .comments-area img {
+      height: 64px;
+      width: 64px;
+      margin-right: 2rem;
+      margin-top: 2rem; }
     .single-post .hfeed.site .site-content .content-area .BodyA {
       font-family: Merriweather;
       font-size: 16px;

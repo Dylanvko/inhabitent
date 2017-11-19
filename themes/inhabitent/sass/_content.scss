@@ -313,6 +313,47 @@
 				padding: 60px 60px 0px 0px;
 				width: 73%;
 
+				.comments-area {
+
+					.comment-list {
+						margin-left: 0;
+						padding-left: 0;
+					}
+
+					.comment-body {
+						display: flex;
+						font-family: Merriweather;
+					}
+
+					.comment-content {
+						border-bottom: 1px solid lightgrey;
+						margin-top: 0.5rem;
+						margin-bottom: 0.5rem;
+						padding: 1rem;
+
+						.fn {
+							font-style: normal;
+							font-weight: 600;
+						}
+					}
+
+					.comment-metadata {
+						color: grey;
+					}
+
+					a {
+						color: #248A83;
+					}
+
+					img {
+						height: 64px;
+						width: 64px;
+						margin-right: 2rem;
+						margin-top: 2rem;
+					}
+
+				}
+
 				.BodyA {
 					font-family: Merriweather;
 					font-size: 16px;
