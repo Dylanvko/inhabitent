@@ -29,3 +29,155 @@
     }
   }
 }
+
+.archive {
+
+  .page-header {
+    text-align: center;
+    margin-top: 6rem;
+
+    .product-type-blocks {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      a {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        color: #248a83;
+      }
+      
+    }
+  }
+}
+
+.product-grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: none;
+  padding-right: none;
+  justify-content: space-between;
+
+  li {
+    list-style: none;
+    width: 22.5%;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.adventure-single-wrapper {
+  padding: 2.5rem 1.5rem;
+
+  .adventure-button {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: Novecento,sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .adventure-button:hover {
+    background-color: #248a83;
+    border-color: #248a83;
+  }
+}
+
+.latest-journal-entries-wrapper {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+    font-family: Merriweather;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 1.25;
+  }
+
+  h3:hover {
+    color: #f0e4d1;
+    cursor: pointer;
+  }
+
+  h2 {
+    text-align: center;
+		font-family: Novecento, sans-serif;
+		font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .latest-journal-entries {
+    width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+
+    .left-adventure {
+      height: 540px;
+      width: 540px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/canoe-girl.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      border-right: 20px; 
+      border-right-style: solid;
+      border-right-color: #FFFFFF;
+      font-size: 2.4rem;
+    }
+
+    .right-adventure {
+      
+      .top-adventure {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/beach-bonfire.jpg);
+        height: 270px;
+        width: 560px;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-bottom: 20px; 
+        border-bottom-style: solid;
+        border-bottom-color: #FFFFFF;
+        font-size: 2rem;
+      }
+
+      .bottom-adventure {
+        display: flex;
+
+        .bottom-left-adventure {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/mountain-hikers.jpg);
+          height: 270px;
+          width: 280px;
+          background-position: 50% 50%;
+          background-size: cover;
+          border-right: 10px; 
+          border-right-style: solid;
+          border-right-color: #FFFFFF;
+          font-size: 1.4rem;
+        }
+
+        .bottom-right-adventure {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/night-sky.jpg);
+          height: 270px;
+          width: 280px;
+          background-position: 50% 50%;
+          background-size: cover;
+          border-left: 10px; 
+          border-left-style: solid;
+          border-left-color: #FFFFFF;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

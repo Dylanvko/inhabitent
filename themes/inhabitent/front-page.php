@@ -71,6 +71,7 @@ get_header(); ?>
 ?>
 
 <div class="journal-block-wrapper">
+<h2>Inhabitent Journal</h2>
 <ul>
 <?php if ( $products->have_posts() ) : ?>
 	 <?php while ( $products->have_posts() ) : $products->the_post(); ?>
@@ -80,8 +81,7 @@ get_header(); ?>
 			<li>
 			<div class='journal-container'>
 			<?php the_post_thumbnail('large'); ?> </div>
-			<div class='journal-entry-wrapper'><div class='entry-metadata'><?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span></div><h3><?php the_title(); ?></h3>
-			<a href='<?php the_permalink(); ?>'>Read Entry</a></div>
+			<div class='journal-entry-wrapper'><div class='entry-metadata'><?php red_starter_posted_on(); ?> / <span><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span></div><h3><?php the_title(); ?></h3></div>	<a class='journal-button' href='<?php the_permalink(); ?>'>Read Entry</a>
 			</li>
 
    <?php endwhile; ?>
@@ -93,4 +93,38 @@ get_header(); ?>
 </ul>
 </div>
 
+<section class='latest-journal-entries-wrapper'>
+<h2>Latest Adventures</h2>
+
+<div class="latest-journal-entries">
+	<div class='left-adventure'>
+	<div class='adventure-single-wrapper'>
+		<h3>Getting Back to Nature in a Canoe</h3>
+		<a class='adventure-button' href=''>Read More</a>
+		</div>
+	</div>
+	<div class='right-adventure'>
+	<div class='top-adventure'>
+	<div class='adventure-single-wrapper'>
+	<h3>A Night with Friends at the Beach</h3>
+	<a class='adventure-button' href=''>Read More</a>
+	</div>
+	</div>
+	<div class='bottom-adventure'>
+		<div class='bottom-left-adventure'>
+		<div class='adventure-single-wrapper'>
+		<h3>Taking in the View at Big Mountain</h3>
+		<a class='adventure-button' href=''>Read More</a>
+		</div>
+		</div>
+		<div class='bottom-right-adventure'>
+			<div class='adventure-single-wrapper'>
+			<h3>Star-Gazing at the Night Sky</h3>
+			<a class='adventure-button' href=''>Read More</a>
+							 </div>
+		</div>
+	</div>
+	</div>
+</div>
+</section>
 <?php get_footer(); ?>

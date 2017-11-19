@@ -28,7 +28,7 @@ get_header(); ?>
                   <?php foreach ( $terms as $term ) : ?>
 
                      <div class="product-type-block-wrapper">
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
                      </div>
 
                   <?php endforeach; ?>
@@ -37,14 +37,14 @@ get_header(); ?>
                
             <?php endif; ?>
 
-
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class='product-grid-container'>
+				<ul class='product-grid-list'>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
-
+		<li class='product-grid-item'>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 					<?php if ( has_post_thumbnail() ) : ?>
@@ -53,14 +53,16 @@ get_header(); ?>
 
 					<h2>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<span>.....................</span>
+						<span><?php echo CFS()->get( 'price' ); ?></span>
 					</h2>
+							 </li>
 
-		
 		</article><!-- #post-## -->
 
-
-
 			<?php endwhile; ?>
+					</ul>
+					</div>
 
 			<?php the_posts_navigation(); ?>
 

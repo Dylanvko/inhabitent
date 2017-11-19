@@ -4,6 +4,10 @@
 
 /* Posts and pages */
 
+.site-content {
+	margin-top: 3rem;
+}
+
 .blog {
 
 	.site-content {
@@ -22,7 +26,11 @@
 		}
 
 		.widget-area {
-			min-width: 25%;
+			min-width: 27%;
+
+			i {
+				margin-right: 0.5rem;
+			}
 		}		
 	}
 			
@@ -67,6 +75,18 @@
 
 .journal-block-wrapper {
 	margin-top: 3.75rem;
+	max-width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+
+	h2 {
+		text-align: center;
+		font-family: Novecento, sans-serif;
+		font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 3.75rem;
+	}
 	
 	ul {
 		display: flex;
@@ -80,7 +100,12 @@
 			align-content: center;
 			border: 1px;
 			border-style: solid;
-			border-color: #e1e1e1
+			border-color: #e1e1e1;
+
+			.journal-button {
+				border: 1px solid #000000;
+				color: #000;
+			}
 		}
 	}
 }
