@@ -481,13 +481,16 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: #248a83; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
+
+a {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -533,6 +536,8 @@ a {
     display: block;
     color: #248a83;
     text-decoration: none; }
+  .main-navigation a:hover {
+    color: #2f1339; }
 
 a {
   color: #248a83;
@@ -692,6 +697,44 @@ a {
   color: #fff;
   text-decoration: none; }
 
+.social-button {
+  background-color: transparent;
+  font-family: Novecento, sans-serif;
+  font-size: 1rem;
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 0.75rem 1.5rem; }
+
+.social-button:hover {
+  background-color: #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border-color: #248a83;
+  color: #FFFFFF; }
+
+.single-post .submit {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14px;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+
+.single-post .submit:hover {
+  background-color: #30605c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -822,7 +865,7 @@ a {
   max-width: 1120px; }
   .home .hfeed.site .site-content ul img {
     max-height: 250px;
-    max-width: 375px;
+    max-width: 350px;
     width: auto; }
   .home .hfeed.site .site-content ul h1 {
     line-height: 1.25;
@@ -949,6 +992,8 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center; }
+    .product-info.container .product-type-blocks .product-type-block-wrapper:hover {
+      border-color: #d99054; }
     .product-info.container .product-type-blocks .product-type-block-wrapper {
       border: 1px solid #e1e1e1;
       border-top-width: 5px;
@@ -961,7 +1006,7 @@ a {
         height: 70px;
         width: 70px; }
       .product-info.container .product-type-blocks .product-type-block-wrapper a {
-        background: #248a83;
+        background-color: #248a83;
         border: none;
         border-radius: 0;
         color: #fff;
@@ -972,11 +1017,13 @@ a {
         padding: .75rem 1.5rem;
         text-decoration: none;
         text-transform: uppercase; }
+      .product-info.container .product-type-blocks .product-type-block-wrapper a:hover {
+        background-color: #30605c; }
       .product-info.container .product-type-blocks .product-type-block-wrapper p {
         margin-bottom: 1.5rem;
         color: #404040;
         font-family: Merriweather;
-        font-size: 1.1rem;
+        font-size: 0.98rem;
         line-height: 1.75; }
 
 .read-more-button {
@@ -993,107 +1040,117 @@ a {
   padding: 0.75rem 1rem; }
 
 .read-more-button:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
 
-.single-post .hfeed.site .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto; }
-  .single-post .hfeed.site .site-content .entry-footer {
-    font-family: Novecento, sans-serif;
-    text-transform: uppercase; }
-    .single-post .hfeed.site .site-content .entry-footer .cat-links {
-      margin-right: 1.5rem; }
-  .single-post .hfeed.site .site-content .widget-area {
-    min-width: 27%;
-    border-left: 1px solid #e1e1e1; }
-    .single-post .hfeed.site .site-content .widget-area ul {
-      margin-left: 0;
-      padding-left: 0; }
-    .single-post .hfeed.site .site-content .widget-area i {
-      margin-right: 0.5rem; }
-  .single-post .hfeed.site .site-content .content-area {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    padding: 60px 60px 0px 0px;
-    width: 73%; }
-    .single-post .hfeed.site .site-content .content-area .comments-area .comment-list {
-      margin-left: 0;
-      padding-left: 0; }
-    .single-post .hfeed.site .site-content .content-area .comments-area .comment-body {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-family: Merriweather; }
-    .single-post .hfeed.site .site-content .content-area .comments-area .comment-content {
-      border-bottom: 1px solid lightgrey;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      padding: 1rem; }
-      .single-post .hfeed.site .site-content .content-area .comments-area .comment-content .fn {
-        font-style: normal;
-        font-weight: 600; }
-    .single-post .hfeed.site .site-content .content-area .comments-area .comment-metadata {
-      color: grey; }
-    .single-post .hfeed.site .site-content .content-area .comments-area a {
-      color: #248A83; }
-    .single-post .hfeed.site .site-content .content-area .comments-area img {
-      height: 64px;
-      width: 64px;
-      margin-right: 2rem;
-      margin-top: 2rem; }
-    .single-post .hfeed.site .site-content .content-area .BodyA {
-      font-family: Merriweather;
-      font-size: 16px;
-      line-height: 1.75;
-      color: #404040; }
-    .single-post .hfeed.site .site-content .content-area .entry-header {
-      position: relative; }
-      .single-post .hfeed.site .site-content .content-area .entry-header h1 {
-        background-color: #248a83;
-        color: #ffffff;
-        font-size: 33.6px;
-        font-size: 2.1rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: .75rem 1.5rem;
-        margin-top: 2.25rem;
-        max-width: 75%; }
-      .single-post .hfeed.site .site-content .content-area .entry-header a {
-        color: #FFFFFF; }
-    .single-post .hfeed.site .site-content .content-area .single-entry-meta {
+.read-more-button:visited:hover {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.single-post {
+  line-height: 1.5; }
+  .single-post .hentry {
+    margin-bottom: 1rem; }
+  .single-post .nav-links {
+    display: none; }
+  .single-post .hfeed.site .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto; }
+    .single-post .hfeed.site .site-content .entry-footer {
       font-family: Novecento, sans-serif;
-      text-transform: uppercase;
-      background-color: #248a83;
-      color: #fff;
-      display: inline-block;
-      padding: 0.2rem 1.5rem;
-      position: absolute;
-      bottom: 8px;
-      right: 0px; }
-    .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper {
-      padding: 0.75rem; }
-      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper h3 {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
-        color: #248A83;
-        margin-top: 0;
-        padding-bottom: 0.5rem; }
-      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper h3:hover {
-        color: #2f1339;
-        cursor: pointer; }
-      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper a {
-        font-family: Novecento; }
-
-.single-post .hfeed.site img {
-  width: 100%; }
+      text-transform: uppercase; }
+      .single-post .hfeed.site .site-content .entry-footer .cat-links {
+        margin-right: 1.5rem; }
+    .single-post .hfeed.site .site-content .widget-area {
+      min-width: 27%;
+      border-left: 1px solid #e1e1e1; }
+      .single-post .hfeed.site .site-content .widget-area ul {
+        margin-left: 0;
+        padding-left: 0; }
+      .single-post .hfeed.site .site-content .widget-area i {
+        margin-right: 0.5rem; }
+    .single-post .hfeed.site .site-content .content-area {
+      -ms-flex-line-pack: center;
+          align-content: center;
+      padding: 60px 60px 0px 0px;
+      width: 73%; }
+      .single-post .hfeed.site .site-content .content-area .comments-area .comment-list {
+        margin-left: 0;
+        padding-left: 0; }
+      .single-post .hfeed.site .site-content .content-area .comments-area .comment-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: Merriweather; }
+      .single-post .hfeed.site .site-content .content-area .comments-area .comment-content {
+        border-bottom: 1px solid lightgrey;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem; }
+        .single-post .hfeed.site .site-content .content-area .comments-area .comment-content .fn {
+          font-style: normal;
+          font-weight: 600; }
+      .single-post .hfeed.site .site-content .content-area .comments-area .comment-metadata {
+        color: grey; }
+      .single-post .hfeed.site .site-content .content-area .comments-area a {
+        color: #248A83; }
+      .single-post .hfeed.site .site-content .content-area .comments-area img {
+        height: 64px;
+        width: 64px;
+        margin-right: 2rem;
+        margin-top: 2rem; }
+      .single-post .hfeed.site .site-content .content-area .BodyA {
+        font-family: Merriweather;
+        font-size: 16px;
+        line-height: 1.75;
+        color: #404040; }
+      .single-post .hfeed.site .site-content .content-area .entry-header {
+        position: relative; }
+        .single-post .hfeed.site .site-content .content-area .entry-header h1 {
+          background-color: #248a83;
+          color: #ffffff;
+          font-size: 33.6px;
+          font-size: 2.1rem;
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: .75rem 1.5rem;
+          margin-top: 2.25rem;
+          max-width: 75%; }
+        .single-post .hfeed.site .site-content .content-area .entry-header a {
+          color: #FFFFFF; }
+      .single-post .hfeed.site .site-content .content-area .single-entry-meta {
+        font-family: Novecento, sans-serif;
+        text-transform: uppercase;
+        background-color: #248a83;
+        color: #fff;
+        display: inline-block;
+        padding: 0.2rem 1.5rem;
+        position: absolute;
+        bottom: 8px;
+        right: 0px; }
+      .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper {
+        padding: 0.75rem; }
+        .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper h3 {
+          font-size: 1.3rem;
+          line-height: 1.5rem;
+          color: #248A83;
+          margin-top: 0;
+          padding-bottom: 0.5rem; }
+        .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper h3:hover {
+          color: #2f1339;
+          cursor: pointer; }
+        .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper a {
+          font-family: Novecento; }
+  .single-post .hfeed.site img {
+    width: 100%; }
 
 .archive .site-content {
   display: -webkit-box;
@@ -1126,7 +1183,7 @@ a {
 
 .hentry {
   margin: 0 0 1.5rem;
-  margin-bottom: 6rem; }
+  margin-bottom: 4.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -1138,6 +1195,7 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
+  line-height: 1.5;
   margin: 1.5rem 0 0; }
   .page-content a,
   .entry-content a,
@@ -1271,7 +1329,7 @@ object {
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem; }
   .page-template-about .entry-content h2 {
     text-align: center; }
@@ -1289,6 +1347,8 @@ object {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 2rem; }
+    .archive .page-header .product-type-blocks a:hover {
+      color: #2f1339; }
     .archive .page-header .product-type-blocks a {
       margin-right: 1rem;
       margin-left: 1rem;
@@ -1574,6 +1634,9 @@ object {
 .tax-product-type .widget-area {
   display: none; }
 
+.single-product .nav-links {
+  display: none; }
+
 .single-product .site-content {
   width: 1120px;
   margin-right: auto;
@@ -1650,6 +1713,8 @@ object {
       padding-left: 0; }
       .page-id-60 .site-content .widget-area ul a {
         color: #248a83; }
+      .page-id-60 .site-content .widget-area ul a:hover {
+        color: #2f1339; }
 
 .error404 .site-content {
   display: -webkit-box;

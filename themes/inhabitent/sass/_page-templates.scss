@@ -36,7 +36,7 @@
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
     
     h2 {
@@ -59,6 +59,10 @@
       display: flex;
       justify-content: center;
       margin-bottom: 2rem;
+
+      a:hover {
+        color: #2f1339;
+      }
 
       a {
         margin-right: 1rem;
@@ -438,6 +442,10 @@
 }
 
 .single-product {
+
+  .nav-links {
+    display: none;
+  }
   
   .site-header {
 
@@ -550,6 +558,10 @@
 
         a {
           color: #248a83;
+        }
+
+        a:hover {
+          color: #2f1339;
         }
       }
     }

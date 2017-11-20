@@ -8,7 +8,7 @@ a {
 	color: $color__link;
 
 	&:visited {
-		color: $color__link-visited;
+		color: #248a83;
 	}
 	&:hover,
 	&:focus,
@@ -22,6 +22,10 @@ a {
 	&:active {
 		outline: 0;
 	}
+}
+
+a {
+	outline: 0;
 }
 
 /* Menus */
@@ -90,6 +94,10 @@ a {
 		display: block;
 		color: #248a83;
 		text-decoration: none;
+	}
+
+	a:hover {
+		color: #2f1339
 	}
 
 	.current_page_item > a,
@@ -271,4 +279,46 @@ a {
 .site-footer a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.social-button {
+	background-color: transparent;
+	font-family: Novecento, sans-serif;
+	font-size: 1rem;
+	border-radius: 0;
+	border: 1px solid black;
+	padding: 0.75rem 1.5rem;
+}
+
+.social-button:hover {
+	background-color: #248a83;
+	box-shadow: none;
+	text-shadow: none;
+	border-color: #248a83;
+	color: #FFFFFF;
+}
+
+.single-post {
+.submit {
+	background: #248a83;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+	font-family: Novecento Sans Web,sans-serif;
+	font-size: 14px;
+	font-size: .9rem;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.submit:hover {
+	background-color: #30605c;
+	box-shadow: none;
+	text-shadow: none;
+
+}
 }

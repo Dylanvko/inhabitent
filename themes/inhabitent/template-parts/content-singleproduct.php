@@ -18,6 +18,20 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<div class='social-buttons'>
+		<button type="button" class='social-button'>
+			<i class='fa fa-facebook'></i>
+			Like
+			</button>
+		<button type="button" class='social-button'>
+		<i class='fa fa-twitter'></i>
+		Tweet
+		</button>
+		<button type="button" class='social-button'>
+		<i class='fa fa-pinterest'></i>
+		Pin
+		</button>
+	</div>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),

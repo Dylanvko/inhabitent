@@ -64,7 +64,7 @@
 
 				img {
 					max-height: 250px;
-					max-width: 375px;
+					max-width: 350px;
 					width: auto;
 				}
 
@@ -222,6 +222,10 @@
 		justify-content: space-between;
 		text-align: center;
 
+		.product-type-block-wrapper:hover {
+			border-color: #d99054;
+		}
+
 		.product-type-block-wrapper {
 			border: 1px solid #e1e1e1;
 			border-top-width: 5px;
@@ -235,7 +239,7 @@
 			}
 			
 			a {
-				background: #248a83;
+				background-color: #248a83;
 				border: none;
 				border-radius: 0;
 				color: #fff;
@@ -248,16 +252,22 @@
 				text-transform: uppercase;
 			}
 
+			a:hover {
+				background-color: #30605c;
+			}
+
 			p {
 				margin-bottom: 1.5rem;
 				color: #404040;
 				font-family: Merriweather;
-				font-size: 1.1rem;
+				font-size: 0.98rem;
 				line-height: 1.75;
 			}
 		}
 	}
 }
+
+	
 
 .read-more-button {
 	border: 1px solid #000000;
@@ -276,9 +286,24 @@
 
 .read-more-button:visited {
 	text-decoration: none;
+	color: #000000;
+}
+
+.read-more-button:visited:hover {
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .single-post {
+	line-height: 1.5;
+
+	.hentry {
+    margin-bottom: 1rem;
+	}
+
+	.nav-links {
+		display: none;
+	}
 
 	.hfeed.site {
 
@@ -473,7 +498,7 @@
 
 .hentry {
 	margin: 0 0 $base__space-unit;
-	margin-bottom: 6rem;
+	margin-bottom: 4.5rem;
 }
 
 .updated:not(.published){
@@ -488,6 +513,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
+	line-height: 1.5;
 	margin: $base__space-unit 0 0;
 
 	a {
