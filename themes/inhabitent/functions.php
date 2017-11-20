@@ -97,9 +97,6 @@ function inhabitent_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 
-
-
-
 function wpdocs_custom_excerpt_length( $length ) {
 	return 50;
 }
