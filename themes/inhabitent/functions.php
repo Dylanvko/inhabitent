@@ -115,7 +115,7 @@ function rc_modify_query_limit_posts( $query ) {
 //Change 404 search bar
 function my_search_form($html)
 {
-    return str_replace('Type and hit enter', 'Search site for ', $html);
+    return str_replace('Type and hit enter', 'Type and hit enter ', $html);
 }
 add_filter('get_search_form', 'my_search_form');
 

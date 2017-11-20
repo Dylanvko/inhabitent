@@ -42,8 +42,15 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav>
 					<!-- #site-navigation -->
+				<div class='header-search-wrapper'>
+					<div class='header-search'><i class="fa fa-search" aria-hidden="true"></i></div>
+				<div class='search-form'>
+					<?php get_search_form(); ?>
+				</div>
 				</div>
 			</header>
 			<!-- #masthead -->
 
 			<div id="content" class="site-content">
+
+			

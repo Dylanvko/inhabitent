@@ -120,6 +120,33 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 		width: 1120px;
+
+		.header-search-wrapper {
+			display: flex;
+			align-items: center;
+
+			.header-search {
+				padding-left: 1.5rem;
+				color: #248a83;
+			}
+
+			.search-form {
+
+				fieldset {
+					padding: 0 0 0 0;
+				
+					.search-field {
+						padding: 0 0 0 1.5rem;
+						font-family: Novecento, sans-serif;
+						background: transparent;
+						border: none;
+						text-transform: uppercase;
+						line-height: 1;
+					}
+				}
+			}
+		}
+
 	}
 
 	h1 {
