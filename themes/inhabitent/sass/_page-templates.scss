@@ -606,3 +606,133 @@
     margin-top: 0;
   }
 }
+
+.search-results {
+  .site-content {
+    display: flex;
+    width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .content-area {
+      align-content: center;
+      padding: 20px 60px 0px 0px;
+      width: 73%;
+
+      .hentry {
+        margin-bottom: 4rem;
+      }
+
+      a {
+        color: #404040;
+      }
+
+      a:hover {
+        color: #FFFFFF;
+        border: none;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+      
+      .entry-header {
+        position: relative;
+
+        .entry-meta {
+          background-color: transparent;
+          color: #404040;
+          padding: 0rem;
+          position: inherit;
+          bottom: 0;
+          right: 0;
+        }
+      
+        .entry-title {
+          background-color: transparent;
+          color: black;
+          font-size: 33.6px;
+          font-size: 2.1rem;
+          position: inherit;
+          left: 0;
+          top: 0;
+          padding: 0rem 0rem;
+          margin-top: 0rem;
+          max-width: 100%;
+        }
+      
+        a {
+          color: #248a83;
+        }
+      }
+
+      .page-header {
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+
+      .page-title {
+        font-size: 2.3rem;
+      }
+    }
+
+      .page-content {
+        ul {
+          margin-left: 0;
+          padding-left: 0;
+        }
+
+        a {
+          color: #248a83;
+        }
+      }
+    }
+
+    .widget-area {
+      max-width: 27%;
+      border-left: 1px solid #e1e1e1;
+      
+      ul {
+        margin-left: 0;
+        padding-left: 0;
+
+        a {
+          color: #248a83;
+        }
+      }
+    }
+  }
+}
+
+.search-results {
+  .search-pagination {
+    font-family: Novecento, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid lightgrey;
+
+      a {
+        color: white;
+      }
+
+      a:visited {
+        color: #FFFFFF;
+      }
+    
+          .page-numbers.current {
+            background-color: grey;
+          }
+    
+          .page-numbers {
+            background-color: #248a83;
+            color: #ffffff;
+            display: inline-block;
+            line-height: 1;
+            padding: .5rem .75rem;
+            margin-right: .25rem;
+            text-align: center;
+    
+          }
+        }
+}

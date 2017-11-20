@@ -640,14 +640,14 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  display: none;
+  display: inline;
   float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  display: none;
+  display: inline;
   float: right;
   text-align: right;
   width: 50%; }
@@ -1681,3 +1681,87 @@ object {
 
 .page-id-14 .site-content {
   margin-top: 0; }
+
+.search-results .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto; }
+  .search-results .site-content .content-area {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 20px 60px 0px 0px;
+    width: 73%; }
+    .search-results .site-content .content-area .hentry {
+      margin-bottom: 4rem; }
+    .search-results .site-content .content-area a {
+      color: #404040; }
+    .search-results .site-content .content-area a:hover {
+      color: #FFFFFF;
+      border: none; }
+    .search-results .site-content .content-area p {
+      margin-bottom: 2rem; }
+    .search-results .site-content .content-area .entry-header {
+      position: relative; }
+      .search-results .site-content .content-area .entry-header .entry-meta {
+        background-color: transparent;
+        color: #404040;
+        padding: 0rem;
+        position: inherit;
+        bottom: 0;
+        right: 0; }
+      .search-results .site-content .content-area .entry-header .entry-title {
+        background-color: transparent;
+        color: black;
+        font-size: 33.6px;
+        font-size: 2.1rem;
+        position: inherit;
+        left: 0;
+        top: 0;
+        padding: 0rem 0rem;
+        margin-top: 0rem;
+        max-width: 100%; }
+      .search-results .site-content .content-area .entry-header a {
+        color: #248a83; }
+    .search-results .site-content .content-area .page-header {
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem; }
+      .search-results .site-content .content-area .page-header .page-title {
+        font-size: 2.3rem; }
+    .search-results .site-content .content-area .page-content ul {
+      margin-left: 0;
+      padding-left: 0; }
+    .search-results .site-content .content-area .page-content a {
+      color: #248a83; }
+  .search-results .site-content .widget-area {
+    max-width: 27%;
+    border-left: 1px solid #e1e1e1; }
+    .search-results .site-content .widget-area ul {
+      margin-left: 0;
+      padding-left: 0; }
+      .search-results .site-content .widget-area ul a {
+        color: #248a83; }
+
+.search-results .search-pagination {
+  font-family: Novecento, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid lightgrey; }
+  .search-results .search-pagination a {
+    color: white; }
+  .search-results .search-pagination a:visited {
+    color: #FFFFFF; }
+  .search-results .search-pagination .page-numbers.current {
+    background-color: grey; }
+  .search-results .search-pagination .page-numbers {
+    background-color: #248a83;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1;
+    padding: .5rem .75rem;
+    margin-right: .25rem;
+    text-align: center; }

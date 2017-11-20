@@ -105,6 +105,15 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
 
 
+//Limit search to 10 results.
+function change_wp_search_size($queryVars) {
+	if ( isset($_REQUEST['s']) ) // Make sure it is a search page
+		$queryVars['posts_per_page'] = 10; // Change 10 to the number of posts you would like to show
+	return $queryVars; // Return our modified query variables
+}
+add_filter('request', 'change_wp_search_size');
+
+
 //Show 16 products on shop page.
 function rc_modify_query_limit_posts( $query ) {
 

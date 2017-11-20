@@ -57,7 +57,8 @@
 </div>
 					<div class="text-logo">
 						<a href=''> 
-						<img class='home-hero-logo' src='../../inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg' alt='White inhabitent logo'>
+
+						<img class='home-hero-logo' src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'; ?>" alt='White inhabitent logo'>
 						</a>
 					</div>
 					</div>

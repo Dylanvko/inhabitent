@@ -3,4 +3,8 @@ jQuery( document ).ready(function($) {
     $('.search-form').toggle();
     $( '.search-field' ).focus();
   });
+
+  $('.search-field').on('blur', function() {
+    $('.search-form').toggle();
+  });
 });
