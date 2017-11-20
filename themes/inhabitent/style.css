@@ -207,9 +207,9 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  border: none;
+  margin: 0 2px 0 0;
+  padding: 0.35em 0.625em 0.75em 0em; }
 
 legend {
   border: 0;
@@ -464,11 +464,15 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  color: #666;
+  background-color: #f4f4f4; }
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 100%;
+  color: #666;
+  background-color: #f4f4f4; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1223,6 +1227,17 @@ object {
   height: 100vh;
   margin-right: none; }
 
+.page-template-about .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .page-template-about .entry-title {
   text-align: center;
   vertical-align: middle;
@@ -1484,27 +1499,77 @@ object {
           width: 100%;
           height: auto; }
 
-.page-template-default .site-content {
+.page-id-60 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
   margin-right: auto;
   margin-left: auto; }
-  .page-template-default .site-content .content-area {
+  .page-id-60 .site-content .content-area {
     -ms-flex-line-pack: center;
         align-content: center;
     padding: 20px 60px 0px 0px;
     width: 73%; }
-    .page-template-default .site-content .content-area h1 {
+    .page-id-60 .site-content .content-area .wpcf7 {
+      font-family: Novecento; }
+    .page-id-60 .site-content .content-area h1 {
       font-size: 2.5rem; }
-    .page-template-default .site-content .content-area h2 {
+    .page-id-60 .site-content .content-area h2 {
       color: #404040; }
-  .page-template-default .site-content .widget-area {
+  .page-id-60 .site-content .wpcf7-form-control.wpcf7-submit {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14px;
+    font-size: .9rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
+  .page-id-60 .site-content .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #30605c; }
+  .page-id-60 .site-content .widget-area {
     max-width: 27%;
     border-left: 1px solid #e1e1e1; }
-    .page-template-default .site-content .widget-area ul {
+    .page-id-60 .site-content .widget-area ul {
       margin-left: 0;
       padding-left: 0; }
-      .page-template-default .site-content .widget-area ul a {
+      .page-id-60 .site-content .widget-area ul a {
         color: #248a83; }
+
+.error404 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto; }
+  .error404 .site-content .content-area {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 20px 60px 0px 0px;
+    width: 73%; }
+    .error404 .site-content .content-area .page-title {
+      font-size: 2.3rem; }
+    .error404 .site-content .content-area .page-content ul {
+      margin-left: 0;
+      padding-left: 0; }
+    .error404 .site-content .content-area .page-content a {
+      color: #248a83; }
+  .error404 .site-content .widget-area {
+    max-width: 27%;
+    border-left: 1px solid #e1e1e1; }
+    .error404 .site-content .widget-area ul {
+      margin-left: 0;
+      padding-left: 0; }
+      .error404 .site-content .widget-area ul a {
+        color: #248a83; }
+
+.page-id-14 .site-content {
+  margin-top: 0; }

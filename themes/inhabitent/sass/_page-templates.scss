@@ -17,6 +17,12 @@
 
 .page-template-about {
 
+  .entry-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .entry-title {
     text-align: center;
     vertical-align: middle;
@@ -368,7 +374,7 @@
   }
 }
 
-.page-template-default {
+.page-id-60 {
 
   .site-content {
     display: flex;
@@ -381,12 +387,81 @@
       padding: 20px 60px 0px 0px;
       width: 73%;
 
+      .wpcf7 {
+        font-family: Novecento;
+      }
+
       h1 {
         font-size: 2.5rem;
       }
 
       h2 {
         color: #404040;
+      }
+    }
+
+    .wpcf7-form-control.wpcf7-submit {
+      background: #248a83;
+      border: none;
+      border-radius: 0;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-family: Novecento Sans Web,sans-serif;
+      font-size: 14px;
+      font-size: .9rem;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: none;
+      text-shadow: none;
+    }
+
+    .wpcf7-form-control.wpcf7-submit:hover {
+      background-color: #30605c;
+    }
+
+    .widget-area {
+      max-width: 27%;
+      border-left: 1px solid #e1e1e1;
+      
+      ul {
+        margin-left: 0;
+        padding-left: 0;
+
+        a {
+          color: #248a83;
+        }
+      }
+    }
+  }
+}
+
+.error404 {
+  
+  .site-content {
+    display: flex;
+    width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .content-area {
+      align-content: center;
+      padding: 20px 60px 0px 0px;
+      width: 73%;
+
+      .page-title {
+        font-size: 2.3rem;
+      }
+
+      .page-content {
+        ul {
+          margin-left: 0;
+          padding-left: 0;
+        }
+
+        a {
+          color: #248a83;
+        }
       }
     }
 
@@ -403,5 +478,11 @@
         }
       }
     }
+  }
+}
+
+.page-id-14 {
+  .site-content {
+    margin-top: 0;
   }
 }

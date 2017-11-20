@@ -109,10 +109,15 @@ function rc_modify_query_limit_posts( $query ) {
  if( ! is_admin() && $query->is_main_query() ) {
 
 	 $query->set('posts_per_page', '16');
-
  }
-
 }
+
+//Change 404 search bar
+function my_search_form($html)
+{
+    return str_replace('Type and hit enter', 'Search site for ', $html);
+}
+add_filter('get_search_form', 'my_search_form');
 
 /**
  * Custom template tags for this theme.
