@@ -1483,3 +1483,28 @@ object {
         .single-product .site-content .content-area .single-product-container .product-image-wrapper img {
           width: 100%;
           height: auto; }
+
+.page-template-default .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto; }
+  .page-template-default .site-content .content-area {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 20px 60px 0px 0px;
+    width: 73%; }
+    .page-template-default .site-content .content-area h1 {
+      font-size: 2.5rem; }
+    .page-template-default .site-content .content-area h2 {
+      color: #404040; }
+  .page-template-default .site-content .widget-area {
+    max-width: 27%;
+    border-left: 1px solid #e1e1e1; }
+    .page-template-default .site-content .widget-area ul {
+      margin-left: 0;
+      padding-left: 0; }
+      .page-template-default .site-content .widget-area ul a {
+        color: #248a83; }
