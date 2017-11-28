@@ -52,14 +52,22 @@
 
 @font-face {
   font-family: 'Novecento';
-  src: url('../../fonts/Novecentosanswide-DemiBold.ttf') format('truetype');
+  src: url('../../fonts/Novecentosanswide-demiBold-webfont.eot') format('embedded-opentype'),
+      url('../../fonts/Novecentosanswide-demibold-webfont.woff2') format('woff2'),
+      url('../../fonts/Novecentosanswide-demibold-webfont.woff') format('woff'),
+      url('../../fonts/Novecentosanswide-demibold-webfont.ttf') format('truetype'),
+      url('../../fonts/Novecentosanswide-demibold-webfont.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Novecento';
-  src: url('../../fonts/Novecentosanswide-Normal.ttf') format('truetype');
-  font-weight: 300;
+  src: url('../../fonts/Novecentosanswide-normal-webfont.eot') format('embedded-opentype'),
+  url('../../fonts/Novecentosanswide-normal-webfont.woff') format('woff'),
+  url('../../fonts/Novecentosanswide-normal-webfont.woff2') format('woff2'),
+      url('../../fonts/Novecentosanswide-normal-webfont.ttf') format('truetype'),
+      url('../../fonts/Novecentosanswide-demibold-webfont.svg') format('svg');
+  font-weight: bold;
   font-style: normal;
 }

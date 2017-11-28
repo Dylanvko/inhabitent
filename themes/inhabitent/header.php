@@ -28,7 +28,7 @@
 				<div class="header-container">
 					<div class="site-branding">
 						<div class="logo">
-							<a href="/inhabitent" rel="home">
+							<a href="<? echo home_url('/'); ?>" rel="home">
 								<h1 class="site-title">Inhabitent</h1>
 							</a>
 						</div>

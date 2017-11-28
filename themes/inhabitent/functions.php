@@ -7,37 +7,28 @@
  * @package inhabitent_Theme
  */
 
-if ( ! function_exists( 'inhabitent_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- */
-function Inhabitent_setup() {
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+require_once get_template_directory() . '/inc/setup.php';
+require_once get_template_directory() . '/inc/enqueue.php';
+require_once get_template_directory() . '/inc/template-tags.php';
+require_once get_template_directory() . '/inc/extras.php';
 
-	// Let WordPress manage the document title.
-	add_theme_support( 'title-tag' );
 
-	// Enable support for Post Thumbnails on posts and pages.
-	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html( 'Primary Menu' ),
-	) );
-
-	// Switch search form, comment form, and comments to output valid HTML5.
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
-
-}
-endif; // inhabitent_setup
+ /**
+	* Hooks actions & filters
+  */
 add_action( 'after_setup_theme', 'inhabitent_setup' );
+add_action( 'after_setup_theme', 'inhabitent_content_width', 0 );
+add_action( 'widgets_init', 'inhabitent_widgets_init' );
+add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
+add_filter('get_search_form', 'my_search_form');
+add_filter('request', 'change_wp_search_size');
+add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+
+function wpdocs_custom_excerpt_length( $length ) {
+	return 50;
+}
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -47,7 +38,6 @@ add_action( 'after_setup_theme', 'inhabitent_setup' );
 function inhabitent_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'inhabitent_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'inhabitent_content_width', 0 );
 
 /**
  * Register widget area.
@@ -65,7 +55,7 @@ function inhabitent_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'inhabitent_widgets_init' );
+
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -77,32 +67,6 @@ function inhabitent_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
-
-/**
- * Enqueue scripts and styles.
- */
-function inhabitent_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-
-	wp_enqueue_script( 'scripts.js', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery') );
-
-	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/7bdfd959fe.js', array(), '4.7', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
-
-function wpdocs_custom_excerpt_length( $length ) {
-	return 50;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-
-add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
 
 
 //Limit search to 10 results.
@@ -111,7 +75,7 @@ function change_wp_search_size($queryVars) {
 		$queryVars['posts_per_page'] = 10; // Change 10 to the number of posts you would like to show
 	return $queryVars; // Return our modified query variables
 }
-add_filter('request', 'change_wp_search_size');
+
 
 
 //Show 16 products on shop page.
@@ -128,14 +92,5 @@ function my_search_form($html)
 {
     return str_replace('Type and hit enter', 'Type and hit enter ', $html);
 }
-add_filter('get_search_form', 'my_search_form');
 
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
 
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';

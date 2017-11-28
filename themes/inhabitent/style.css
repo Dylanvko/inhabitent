@@ -43,6 +43,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.page-id-60 .site-content .widget-area, .error404 .site-content .widget-area, .search-results .site-content .widget-area {
+  max-width: 27%;
+  border-left: 1px solid #e1e1e1; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -262,14 +266,14 @@ th {
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/Novecentosanswide-DemiBold.ttf") format("truetype");
+  src: url("../../fonts/Novecentosanswide-demiBold-webfont.eot") format("embedded-opentype"), url("../../fonts/Novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/Novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/Novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/Novecentosanswide-demibold-webfont.svg") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/Novecentosanswide-Normal.ttf") format("truetype");
-  font-weight: 300;
+  src: url("../../fonts/Novecentosanswide-normal-webfont.eot") format("embedded-opentype"), url("../../fonts/Novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/Novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/Novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/Novecentosanswide-demibold-webfont.svg") format("svg");
+  font-weight: bold;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -1160,6 +1164,9 @@ a {
   .single-post .hfeed.site img {
     width: 100%; }
 
+.widget-title {
+  font-weight: bold; }
+
 .archive .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1541,9 +1548,9 @@ object {
 .adventure-single-wrapper {
   padding: 2.5rem 1.5rem; }
   .adventure-single-wrapper .adventure-button {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
     background-color: transparent;
-    color: #FFFFFF;
+    color: #fff;
     font-family: Novecento,sans-serif;
     font-size: 1rem;
     line-height: 1;
@@ -1553,84 +1560,6 @@ object {
   .adventure-single-wrapper .adventure-button:hover {
     background-color: #248a83;
     border-color: #248a83; }
-
-.latest-journal-entries-wrapper {
-  margin-bottom: 2rem; }
-  .latest-journal-entries-wrapper h3 {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    color: #FFFFFF;
-    font-family: Merriweather;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 2px;
-    line-height: 1.25; }
-  .latest-journal-entries-wrapper h3:hover {
-    color: #f0e4d1;
-    cursor: pointer; }
-  .latest-journal-entries-wrapper h2 {
-    text-align: center;
-    font-family: Novecento, sans-serif;
-    font-size: 2.4rem;
-    font-weight: 400;
-    margin-bottom: 3rem;
-    margin-top: 3rem; }
-  .latest-journal-entries-wrapper .latest-journal-entries {
-    width: 1120px;
-    margin-right: auto;
-    margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .latest-journal-entries-wrapper .latest-journal-entries .left-adventure {
-      height: 540px;
-      width: 540px;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/canoe-girl.jpg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/canoe-girl.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      border-right: 20px;
-      border-right-style: solid;
-      border-right-color: #FFFFFF;
-      font-size: 2.4rem; }
-    .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .top-adventure {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/beach-bonfire.jpg);
-      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/beach-bonfire.jpg);
-      height: 270px;
-      width: 560px;
-      background-position: 50% 50%;
-      background-size: cover;
-      border-bottom: 20px;
-      border-bottom-style: solid;
-      border-bottom-color: #FFFFFF;
-      font-size: 2rem; }
-    .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .bottom-adventure {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .bottom-adventure .bottom-left-adventure {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/mountain-hikers.jpg);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/mountain-hikers.jpg);
-        height: 270px;
-        width: 280px;
-        background-position: 50% 50%;
-        background-size: cover;
-        border-right: 10px;
-        border-right-style: solid;
-        border-right-color: #FFFFFF;
-        font-size: 1.4rem; }
-      .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .bottom-adventure .bottom-right-adventure {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/night-sky.jpg);
-        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/night-sky.jpg);
-        height: 270px;
-        width: 280px;
-        background-position: 50% 50%;
-        background-size: cover;
-        border-left: 10px;
-        border-left-style: solid;
-        border-left-color: #FFFFFF;
-        font-size: 1.4rem; }
 
 .tax-product-type .site-content {
   width: 1120px;
@@ -1713,16 +1642,13 @@ object {
     text-shadow: none; }
   .page-id-60 .site-content .wpcf7-form-control.wpcf7-submit:hover {
     background-color: #30605c; }
-  .page-id-60 .site-content .widget-area {
-    max-width: 27%;
-    border-left: 1px solid #e1e1e1; }
-    .page-id-60 .site-content .widget-area ul {
-      margin-left: 0;
-      padding-left: 0; }
-      .page-id-60 .site-content .widget-area ul a {
-        color: #248a83; }
-      .page-id-60 .site-content .widget-area ul a:hover {
-        color: #2f1339; }
+  .page-id-60 .site-content .widget-area ul {
+    margin-left: 0;
+    padding-left: 0; }
+    .page-id-60 .site-content .widget-area ul a {
+      color: #248a83; }
+    .page-id-60 .site-content .widget-area ul a:hover {
+      color: #2f1339; }
 
 .error404 .site-content {
   display: -webkit-box;
@@ -1743,14 +1669,11 @@ object {
       padding-left: 0; }
     .error404 .site-content .content-area .page-content a {
       color: #248a83; }
-  .error404 .site-content .widget-area {
-    max-width: 27%;
-    border-left: 1px solid #e1e1e1; }
-    .error404 .site-content .widget-area ul {
-      margin-left: 0;
-      padding-left: 0; }
-      .error404 .site-content .widget-area ul a {
-        color: #248a83; }
+  .error404 .site-content .widget-area ul {
+    margin-left: 0;
+    padding-left: 0; }
+    .error404 .site-content .widget-area ul a {
+      color: #248a83; }
 
 .page-id-14 .site-content {
   margin-top: 0; }
@@ -1809,14 +1732,11 @@ object {
       padding-left: 0; }
     .search-results .site-content .content-area .page-content a {
       color: #248a83; }
-  .search-results .site-content .widget-area {
-    max-width: 27%;
-    border-left: 1px solid #e1e1e1; }
-    .search-results .site-content .widget-area ul {
-      margin-left: 0;
-      padding-left: 0; }
-      .search-results .site-content .widget-area ul a {
-        color: #248a83; }
+  .search-results .site-content .widget-area ul {
+    margin-left: 0;
+    padding-left: 0; }
+    .search-results .site-content .widget-area ul a {
+      color: #248a83; }
 
 .search-results .search-pagination {
   font-family: Novecento, sans-serif;
@@ -1838,3 +1758,81 @@ object {
     padding: .5rem .75rem;
     margin-right: .25rem;
     text-align: center; }
+
+.latest-journal-entries-wrapper {
+  margin-bottom: 2rem; }
+  .latest-journal-entries-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+    font-family: Merriweather;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 1.25; }
+  .latest-journal-entries-wrapper h3:hover {
+    color: #f0e4d1;
+    cursor: pointer; }
+  .latest-journal-entries-wrapper h2 {
+    text-align: center;
+    font-family: Novecento, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+  .latest-journal-entries-wrapper .latest-journal-entries {
+    width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .latest-journal-entries-wrapper .latest-journal-entries .left-adventure {
+      height: 540px;
+      width: 540px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/canoe-girl.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/canoe-girl.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      border-right: 20px;
+      border-right-style: solid;
+      border-right-color: #FFFFFF;
+      font-size: 2.4rem; }
+    .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .top-adventure {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/beach-bonfire.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/beach-bonfire.jpg);
+      height: 270px;
+      width: 560px;
+      background-position: 50% 50%;
+      background-size: cover;
+      border-bottom: 20px;
+      border-bottom-style: solid;
+      border-bottom-color: #FFFFFF;
+      font-size: 2rem; }
+    .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .bottom-adventure {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .bottom-adventure .bottom-left-adventure {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/mountain-hikers.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/mountain-hikers.jpg);
+        height: 270px;
+        width: 280px;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-right: 10px;
+        border-right-style: solid;
+        border-right-color: #FFFFFF;
+        font-size: 1.4rem; }
+      .latest-journal-entries-wrapper .latest-journal-entries .right-adventure .bottom-adventure .bottom-right-adventure {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../../images/night-sky.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../images/night-sky.jpg);
+        height: 270px;
+        width: 280px;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-left: 10px;
+        border-left-style: solid;
+        border-left-color: #FFFFFF;
+        font-size: 1.4rem; }
