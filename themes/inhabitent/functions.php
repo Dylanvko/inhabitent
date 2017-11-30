@@ -12,10 +12,11 @@ require_once get_template_directory() . '/inc/enqueue.php';
 require_once get_template_directory() . '/inc/template-tags.php';
 require_once get_template_directory() . '/inc/extras.php';
 
-
  /**
 	* Hooks actions & filters
-  */
+	*/
+add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
 add_action( 'after_setup_theme', 'inhabitent_setup' );
 add_action( 'after_setup_theme', 'inhabitent_content_width', 0 );
 add_action( 'widgets_init', 'inhabitent_widgets_init' );
@@ -24,7 +25,7 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
 add_filter('get_search_form', 'my_search_form');
 add_filter('request', 'change_wp_search_size');
-add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
+
 
 function wpdocs_custom_excerpt_length( $length ) {
 	return 50;

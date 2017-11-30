@@ -273,7 +273,7 @@ th {
 @font-face {
   font-family: 'Novecento';
   src: url("../../fonts/Novecentosanswide-normal-webfont.eot") format("embedded-opentype"), url("../../fonts/Novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/Novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/Novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/Novecentosanswide-demibold-webfont.svg") format("svg");
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -301,7 +301,8 @@ h1, h2 {
 h2 {
   color: #2f1339;
   font-size: 33.6px;
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  font-weight: bold; }
 
 /* Copy */
 p {
@@ -1335,7 +1336,7 @@ object {
 .page-template-about .entry-title {
   text-align: center;
   vertical-align: middle;
-  font-family: Novecento, sans-serif;
+  font-family: "Novocento", sans-serif;
   font-size: 2.75rem;
   color: white;
   letter-spacing: 2px; }
@@ -1379,12 +1380,12 @@ object {
     .post-type-archive .site-content .content-area .page-header {
       border-bottom: 1px dashed lightgrey; }
       .post-type-archive .site-content .content-area .page-header a {
-        font-family: Novecento;
+        font-family: "Novocento", sans-serif;
         text-transform: uppercase;
         font-size: 1.2rem; }
       .post-type-archive .site-content .content-area .page-header .shop-title {
         font-size: 2.4rem;
-        font-family: Novecento;
+        font-family: "Novocento", sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         color: #404040;
@@ -1425,7 +1426,7 @@ object {
   font-size: 16px;
   position: relative;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Novocento", sans-serif;
   font-weight: normal;
   text-transform: none;
   letter-spacing: 0px; }
@@ -1450,7 +1451,7 @@ object {
     .tax-product-type .site-content .content-area h1 {
       text-align: center;
       font-size: 2.4rem;
-      font-family: Novecento;
+      font-family: "Novocento", sans-serif;
       text-transform: uppercase;
       font-weight: 600;
       color: #404040;
@@ -1512,7 +1513,7 @@ object {
   font-size: 16px;
   position: relative;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Novocento", sans-serif;
   font-weight: normal;
   text-transform: none;
   letter-spacing: 0px; }

@@ -51,6 +51,7 @@ add_filter('login_headertitle', 'inhabitent_logo_url_title');
 
 // About hero image
 function inhabitent_dynamic_css() {
+
 	if ( ! is_page_template( 'about.php') ) {
 		return;
 	}
@@ -61,7 +62,7 @@ function inhabitent_dynamic_css() {
 		return;
 	}
 
-	$hero_css = ".page-template-about .entry-header {
+	$hero_css = ".page-template-about .custom-hero {
 		height: 100vh;
 		width: auto;
 		background:
@@ -71,6 +72,8 @@ function inhabitent_dynamic_css() {
 	}";
 
 	wp_add_inline_style( 'red-starter-style', $hero_css );
+
 }
-add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
+
+
 
