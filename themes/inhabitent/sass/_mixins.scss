@@ -13,5 +13,12 @@
 
 %widget-style {
 	max-width: 27%;
-	border-left: 1px solid #e1e1e1;
+	border-left: 1px solid $color__border;
 }
+
+%content-area-style {
+align-content: center;
+padding: 20px 60px 0px 0px;
+width: 73%;
+}
+

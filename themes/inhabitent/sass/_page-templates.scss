@@ -420,9 +420,7 @@
     margin-left: auto;
 
     .content-area {
-      align-content: center;
-      padding: 20px 60px 0px 0px;
-      width: 73%;
+      @extend %content-area-style;
 
       .wpcf7 {
         font-family: $font__main;
@@ -485,9 +483,7 @@
     margin-left: auto;
 
     .content-area {
-      align-content: center;
-      padding: 20px 60px 0px 0px;
-      width: 73%;
+      @extend %content-area-style;
 
       .page-title {
         font-size: 2.3rem;
@@ -534,9 +530,7 @@
     margin-left: auto;
 
     .content-area {
-      align-content: center;
-      padding: 20px 60px 0px 0px;
-      width: 73%;
+      @extend %content-area-style;
 
       .hentry {
         margin-bottom: 4rem;
