@@ -28,7 +28,7 @@
     vertical-align: middle;
     font-family: $font__main;
     font-size: 2.75rem;
-    color: white;
+    color: $color__lightest;
     letter-spacing: 2px;
   }
 
@@ -48,7 +48,7 @@
 .archive {
 
   .page-header {
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $color__border;
     margin-bottom: 2.5rem;
 
     .page-title {
@@ -61,14 +61,14 @@
       margin-bottom: 2rem;
 
       a:hover {
-        color: #2f1339;
+        color: $color__main-hover;
       }
 
       a {
         margin-right: 1rem;
         margin-left: 1rem;
         font-size: 1.5rem;
-        color: #248a83;
+        color: $color__site-main;
       }
       
     }
@@ -99,7 +99,7 @@
           font-family: $font__main;
           text-transform: uppercase;
           font-weight: 600;
-          color: #404040;
+          color: $color__text-main;
           letter-spacing: 2px;
         }
       }
@@ -107,13 +107,13 @@
       .product-grid-container {
 
         .product-grid-item {
-          border: 1px solid #e1e1e1;
+          border: 1px solid $color__border;
           flex: 0 1 23%;
           max-width: 23%;
           margin-bottom: 1.5rem;
 
           .thumbnail-wrapper {
-            background-color: #e1e1e1;
+            background-color: $color__border;
             height: 250px;
             overflow: hidden;
             position: relative;
@@ -133,12 +133,12 @@
 
         .product-meta {
           padding: 0.4rem 0.75rem;
-          font-family: Merriweather, serif;
+          font-family: $font__secondary;
         }
 
         .product-info {
           text-align: center;
-          font-family: Merriweather, serif;
+          font-family: $font__secondary;
           font-size: 0.95rem;
         }
 
@@ -162,14 +162,14 @@
         position: absolute;
         left: 0;
         padding-right: 2px;
-        background-color: white;
+        background-color: $color__lightest;
     }
     span:last-child {
         position: absolute;
         right: 0;
         top: 0;
         padding-left: 2px;
-        background-color: white;
+        background-color: $color__lightest;
     }
 }
 }
@@ -189,13 +189,13 @@
         font-family: $font__main;
         text-transform: uppercase;
         font-weight: 600;
-        color: #404040;
+        color: $color__text-main;
         letter-spacing: 2px;
 
         .product-type-description {
           p {
-            font-family: Merriweather, serif;
-            color: #404040;
+            font-family: $font__secondary;
+            color: $color__text-main;
             font-size: 1rem;
             line-height: 1.75;
             font-weight: 100;
@@ -209,17 +209,17 @@
         border-bottom: 1px dashed lightgrey;
 
         a {
-          font-family: Novecento;
+          font-family: $font__main;
           text-transform: uppercase;
           font-size: 1.2rem;
         }
 
         .shop-title {
           font-size: 2.4rem;
-          font-family: Novecento;
+          font-family: $font__main;
           text-transform: uppercase;
           font-weight: 600;
-          color: #404040;
+          color: $color__text-main;
           letter-spacing: 2px;
         }
       }
@@ -227,13 +227,13 @@
       .product-grid-container {
 
         .product-grid-item {
-          border: 1px solid #e1e1e1;
+          border: 1px solid $color__border;
           flex: 0 1 23%;
           max-width: 23%;
           margin-bottom: 1.5rem;
 
           .thumbnail-wrapper {
-            background-color: #e1e1e1;
+            background-color: $color__border;
             height: 250px;
             overflow: hidden;
             position: relative;
@@ -253,12 +253,12 @@
 
         .product-meta {
           padding: 0.4rem 0.75rem;
-          font-family: Merriweather, serif;
+          font-family: $font__secondary;
         }
 
         .product-info {
           text-align: center;
-          font-family: Merriweather, serif;
+          font-family: $font__secondary;
           font-size: 0.95rem;
         }
 
@@ -282,14 +282,14 @@
         position: absolute;
         left: 0;
         padding-right: 2px;
-        background-color: white;
+        background-color: $color__lightest;
     }
     span:last-child {
         position: absolute;
         right: 0;
         top: 0;
         padding-left: 2px;
-        background-color: white;
+        background-color: $color__lightest;
     }
 }
 }
@@ -318,7 +318,7 @@
     border: 1px solid $color__lightest;
     background-color: transparent;
     color: $color__lightest;
-    font-family: Novecento,sans-serif;
+    font-family: $font__main;
     font-size: 1rem;
     line-height: 1;
     padding: .75rem 1.5rem;
@@ -327,8 +327,8 @@
   }
 
   .adventure-button:hover {
-    background-color: #248a83;
-    border-color: #248a83;
+    background-color: $color__site-main;
+    border-color: $color__site-main;
   }
 }
 
@@ -386,14 +386,14 @@
           }
 
           .product-price {
-            font-family: Novecento, sans-serif;
+            font-family: $font__main;
             font-size: 1.8rem;
           }
 
           h1 {
             margin-top: 0;
             margin-bottom: 0.5rem;
-            color: #d99054;
+            color: $color__site-seconday-hover;
           }
         }
 
@@ -425,7 +425,7 @@
       width: 73%;
 
       .wpcf7 {
-        font-family: Novecento;
+        font-family: $font__main;
       }
 
       h1 {
@@ -433,17 +433,17 @@
       }
 
       h2 {
-        color: #404040;
+        color: $color__text-main;
       }
     }
 
     .wpcf7-form-control.wpcf7-submit {
-      background: #248a83;
+      background: $color__site-main;
       border: none;
       border-radius: 0;
-      color: #FFFFFF;
+      color: $color__lightest;
       cursor: pointer;
-      font-family: Novecento Sans Web,sans-serif;
+      font-family: $font__main;
       font-size: 14px;
       font-size: .9rem;
       padding: .75rem 1.5rem;
@@ -454,7 +454,7 @@
     }
 
     .wpcf7-form-control.wpcf7-submit:hover {
-      background-color: #30605c;
+      background-color: $color__site-main-hover;
     }
 
     .widget-area {
@@ -465,11 +465,11 @@
         padding-left: 0;
 
         a {
-          color: #248a83;
+          color: $color__site-main;
         }
 
         a:hover {
-          color: #2f1339;
+          color: $color__main-hover;
         }
       }
     }
@@ -500,7 +500,7 @@
         }
 
         a {
-          color: #248a83;
+          color: $color__site-main;
         }
       }
     }
@@ -513,7 +513,7 @@
         padding-left: 0;
 
         a {
-          color: #248a83;
+          color: $color__site-main;
         }
       }
     }
@@ -543,11 +543,11 @@
       }
 
       a {
-        color: #404040;
+        color: $color__text-main;
       }
 
       a:hover {
-        color: #FFFFFF;
+        color: $color__lightest;
         border: none;
       }
 
@@ -560,7 +560,7 @@
 
         .entry-meta {
           background-color: transparent;
-          color: #404040;
+          color: $color__text-main;
           padding: 0rem;
           position: inherit;
           bottom: 0;
@@ -581,12 +581,12 @@
         }
       
         a {
-          color: #248a83;
+          color: $color__site-main;
         }
       }
 
       .page-header {
-        border-bottom: 1px solid #e1e1e1;
+        border-bottom: 1px solid $color__border;
         margin-bottom: 2rem;
         padding-bottom: 1rem;
 
@@ -602,7 +602,7 @@
         }
 
         a {
-          color: #248a83;
+          color: $color__site-main;
         }
       }
     }
@@ -615,7 +615,7 @@
         padding-left: 0;
 
         a {
-          color: #248a83;
+          color: $color__site-main;
         }
       }
     }
@@ -624,18 +624,18 @@
 
 .search-results {
   .search-pagination {
-    font-family: Novecento, sans-serif;
+    font-family: $font__main;
     text-transform: uppercase;
     margin-bottom: 2rem;
     padding-top: 1.5rem;
     border-top: 1px solid lightgrey;
 
       a {
-        color: white;
+        color: $color__lightest;
       }
 
       a:visited {
-        color: #FFFFFF;
+        color: $color__lightest;
       }
     
           .page-numbers.current {
@@ -643,8 +643,8 @@
           }
     
           .page-numbers {
-            background-color: #248a83;
-            color: #ffffff;
+            background-color: $color__site-main;
+            color: $color__lightest;
             display: inline-block;
             line-height: 1;
             padding: .5rem .75rem;

@@ -8,12 +8,12 @@ a {
 	color: $color__link;
 
 	&:visited {
-		color: #248a83;
+		color: $color__site-main;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__site-main;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -32,7 +32,7 @@ a {
 
 .main-navigation {
 	width: 100%;
-	font-family: Novecento, sans-serif;
+	font-family: $font__main;
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: row-reverse;
@@ -92,12 +92,12 @@ a {
 	}
 	a {
 		display: block;
-		color: #248a83;
+		color: $color__site-main;
 		text-decoration: none;
 	}
 
 	a:hover {
-		color: #2f1339
+		color: $color__main-hover;
 	}
 
 	.current_page_item > a,
@@ -107,14 +107,14 @@ a {
 }
 
 a {
-	color: #248a83;
+	color: $color__site-main;
 	text-decoration: none;
 }
 
 
 .site-header {
 	background-color: hsla(0,0%,100%,.85);
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid $color__border;
 	padding: .5rem 0;
 	position: fixed;
 	transition: top .5s linear;
@@ -135,7 +135,7 @@ a {
 
 			.header-search {
 				padding-left: 1.5rem;
-				color: #248a83;
+				color: $color__site-main;
 			}
 
 			.search-form {
@@ -146,7 +146,7 @@ a {
 				
 					.search-field {
 						padding: 0 0 0 1.5rem;
-						font-family: Novecento, sans-serif;
+						font-family: $font__main;
 						background: transparent;
 						border: none;
 						text-transform: uppercase;
@@ -181,7 +181,7 @@ a {
 	background-clip: initial;
 	background-color: initial;
 	background-size: 512px 512px;
-	color:#FFFFFF;
+	color: $color__lightest;
 }
 
 .text-logo {
@@ -191,7 +191,7 @@ a {
 }
 
 .site-info {
-	font-family: Novecento, sans-serif;
+	font-family: $font__main;
 	padding: 1.5rem 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -277,13 +277,13 @@ a {
 }
 
 .site-footer a {
-	color: #fff;
+	color: $color__lightest;
 	text-decoration: none;
 }
 
 .social-button {
 	background-color: transparent;
-	font-family: Novecento, sans-serif;
+	font-family: $font__main;
 	font-size: 1rem;
 	border-radius: 0;
 	border: 1px solid black;
@@ -291,21 +291,21 @@ a {
 }
 
 .social-button:hover {
-	background-color: #248a83;
+	background-color: $color__site-main;
 	box-shadow: none;
 	text-shadow: none;
-	border-color: #248a83;
-	color: #FFFFFF;
+	border-color: $color__site-main;
+	color: $color__lightest;
 }
 
 .single-post {
 .submit {
-	background: #248a83;
+	background: $color__site-main;
 	border: none;
 	border-radius: 0;
-	color: #fff;
+	color: $color__lightest;
 	cursor: pointer;
-	font-family: Novecento Sans Web,sans-serif;
+	font-family: $font__main;
 	font-size: 14px;
 	font-size: .9rem;
 	padding: .75rem 1.5rem;
@@ -316,7 +316,7 @@ a {
 }
 
 .submit:hover {
-	background-color: #30605c;
+	background-color: $color__site-main-hover;
 	box-shadow: none;
 	text-shadow: none;
 

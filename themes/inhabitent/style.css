@@ -285,13 +285,13 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: Merriweather, serif;
+  font-family: "Merriweather", Times, serif;
   font-size: 1rem;
   line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -362,7 +362,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #FFFFFF;
   /* Fallback for when there is no custom background color defined. */
   margin-left: auto;
   margin-right: auto; }
@@ -486,9 +486,9 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: #248a83; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #248A83; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -500,7 +500,7 @@ a {
 /* Menus */
 .main-navigation {
   width: 100%;
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,13 +539,13 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    color: #248a83;
+    color: #248A83;
     text-decoration: none; }
   .main-navigation a:hover {
     color: #2f1339; }
 
 a {
-  color: #248a83;
+  color: #248A83;
   text-decoration: none; }
 
 .site-header {
@@ -579,14 +579,14 @@ a {
               align-items: center; }
       .site-header .header-container .header-search-wrapper .header-search {
         padding-left: 1.5rem;
-        color: #248a83; }
+        color: #248A83; }
       .site-header .header-container .header-search-wrapper .search-form {
         display: none; }
         .site-header .header-container .header-search-wrapper .search-form fieldset {
           padding: 0 0 0 0; }
           .site-header .header-container .header-search-wrapper .search-form fieldset .search-field {
             padding: 0 0 0 1.5rem;
-            font-family: Novecento, sans-serif;
+            font-family: "Novecento", Helvetica, sans-serif;
             background: transparent;
             border: none;
             text-transform: uppercase;
@@ -625,7 +625,7 @@ a {
           flex-direction: row-reverse; }
 
 .site-info {
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   padding: 1.5rem 0;
   text-align: center;
   text-transform: uppercase; }
@@ -699,32 +699,32 @@ a {
   text-transform: uppercase; }
 
 .site-footer a {
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none; }
 
 .social-button {
   background-color: transparent;
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   font-size: 1rem;
   border-radius: 0;
   border: 1px solid black;
   padding: 0.75rem 1.5rem; }
 
 .social-button:hover {
-  background-color: #248a83;
+  background-color: #248A83;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  border-color: #248a83;
+  border-color: #248A83;
   color: #FFFFFF; }
 
 .single-post .submit {
-  background: #248a83;
+  background: #248A83;
   border: none;
   border-radius: 0;
-  color: #fff;
+  color: #FFFFFF;
   cursor: pointer;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   font-size: 14px;
   font-size: .9rem;
   padding: .75rem 1.5rem;
@@ -885,7 +885,7 @@ a {
   margin-left: auto; }
   .journal-block-wrapper h2 {
     text-align: center;
-    font-family: Novecento, sans-serif;
+    font-family: "Novecento", Helvetica, sans-serif;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3rem;
@@ -924,11 +924,11 @@ a {
         bottom: 1.25rem;
         left: 0.9rem;
         position: relative;
-        font-family: Novecento, sans-serif;
+        font-family: "Novecento", Helvetica, sans-serif;
         text-transform: uppercase; }
       .journal-block-wrapper ul li .journal-button:hover {
-        background-color: #248a83;
-        border-color: #248a83;
+        background-color: #248A83;
+        border-color: #248A83;
         color: #FFFFFF; }
 
 .journal-container {
@@ -942,8 +942,8 @@ a {
 .entry-header {
   position: relative; }
   .entry-header h2 {
-    background-color: #248a83;
-    color: #ffffff;
+    background-color: #248A83;
+    color: #FFFFFF;
     font-size: 33.6px;
     font-size: 2.1rem;
     position: absolute;
@@ -956,10 +956,10 @@ a {
     color: #FFFFFF; }
 
 .entry-meta {
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   text-transform: uppercase;
-  background-color: #248a83;
-  color: #fff;
+  background-color: #248A83;
+  color: #FFFFFF;
   display: inline-block;
   padding: 0.2rem 1.5rem;
   position: absolute;
@@ -978,7 +978,7 @@ a {
     color: #2f1339;
     cursor: pointer; }
   .journal-entry-wrapper a {
-    font-family: Novecento; }
+    font-family: "Novecento", Helvetica, sans-serif; }
 
 .product-info.container {
   -ms-flex-line-pack: center;
@@ -1018,11 +1018,11 @@ a {
         height: 70px;
         width: 70px; }
       .product-info.container .product-type-blocks .product-type-block-wrapper a {
-        background-color: #248a83;
+        background-color: #248A83;
         border: none;
         border-radius: 0;
-        color: #fff;
-        font-family: Novecento Sans Web,sans-serif;
+        color: #FFFFFF;
+        font-family: "Novecento", Helvetica, sans-serif;
         font-size: 14.4px;
         font-size: .9rem;
         line-height: 1;
@@ -1034,21 +1034,21 @@ a {
       .product-info.container .product-type-blocks .product-type-block-wrapper p {
         margin-bottom: 1.5rem;
         color: #404040;
-        font-family: Merriweather;
+        font-family: "Merriweather", Times, serif;
         font-size: 0.96rem;
         line-height: 1.75; }
 
 .read-more-button {
   border: 1px solid #000000;
   color: #000000;
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   padding: 0.75rem 1rem; }
 
 .read-more-button:hover {
   border: none;
   color: #FFFFFF;
-  background-color: #248a83;
-  font-family: Novecento, sans-serif;
+  background-color: #248A83;
+  font-family: "Novecento", Helvetica, sans-serif;
   padding: 0.75rem 1rem; }
 
 .read-more-button:visited {
@@ -1076,7 +1076,7 @@ a {
     margin-left: auto;
     margin-right: auto; }
     .single-post .hfeed.site .site-content .entry-footer {
-      font-family: Novecento, sans-serif;
+      font-family: "Novecento", Helvetica, sans-serif;
       text-transform: uppercase; }
       .single-post .hfeed.site .site-content .entry-footer .cat-links {
         margin-right: 1.5rem; }
@@ -1100,9 +1100,9 @@ a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        font-family: Merriweather; }
+        font-family: "Merriweather", Times, serif; }
       .single-post .hfeed.site .site-content .content-area .comments-area .comment-content {
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid #e1e1e1;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         padding: 1rem; }
@@ -1120,15 +1120,15 @@ a {
         margin-top: 2rem;
         border-radius: 50%; }
       .single-post .hfeed.site .site-content .content-area .BodyA {
-        font-family: Merriweather;
+        font-family: "Merriweather", Times, serif;
         font-size: 16px;
         line-height: 1.75;
         color: #404040; }
       .single-post .hfeed.site .site-content .content-area .entry-header {
         position: relative; }
         .single-post .hfeed.site .site-content .content-area .entry-header h1 {
-          background-color: #248a83;
-          color: #ffffff;
+          background-color: #248A83;
+          color: #FFFFFF;
           font-size: 33.6px;
           font-size: 2.1rem;
           position: absolute;
@@ -1140,10 +1140,10 @@ a {
         .single-post .hfeed.site .site-content .content-area .entry-header a {
           color: #FFFFFF; }
       .single-post .hfeed.site .site-content .content-area .single-entry-meta {
-        font-family: Novecento, sans-serif;
+        font-family: "Novecento", Helvetica, sans-serif;
         text-transform: uppercase;
-        background-color: #248a83;
-        color: #fff;
+        background-color: #248A83;
+        color: #FFFFFF;
         display: inline-block;
         padding: 0.2rem 1.5rem;
         position: absolute;
@@ -1161,7 +1161,7 @@ a {
           color: #2f1339;
           cursor: pointer; }
         .single-post .hfeed.site .site-content .content-area .journal-entry-wrapper a {
-          font-family: Novecento; }
+          font-family: "Novecento", Helvetica, sans-serif; }
   .single-post .hfeed.site img {
     width: 100%; }
 
@@ -1336,9 +1336,9 @@ object {
 .page-template-about .entry-title {
   text-align: center;
   vertical-align: middle;
-  font-family: "Novocento", sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   font-size: 2.75rem;
-  color: white;
+  color: #FFFFFF;
   letter-spacing: 2px; }
 
 .page-template-about .entry-content {
@@ -1369,7 +1369,7 @@ object {
       margin-right: 1rem;
       margin-left: 1rem;
       font-size: 1.5rem;
-      color: #248a83; }
+      color: #248A83; }
 
 .post-type-archive .site-content {
   width: 1120px;
@@ -1380,12 +1380,12 @@ object {
     .post-type-archive .site-content .content-area .page-header {
       border-bottom: 1px dashed lightgrey; }
       .post-type-archive .site-content .content-area .page-header a {
-        font-family: "Novocento", sans-serif;
+        font-family: "Novecento", Helvetica, sans-serif;
         text-transform: uppercase;
         font-size: 1.2rem; }
       .post-type-archive .site-content .content-area .page-header .shop-title {
         font-size: 2.4rem;
-        font-family: "Novocento", sans-serif;
+        font-family: "Novecento", Helvetica, sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         color: #404040;
@@ -1413,10 +1413,10 @@ object {
           width: auto; }
     .post-type-archive .site-content .content-area .product-grid-container .product-meta {
       padding: 0.4rem 0.75rem;
-      font-family: Merriweather, serif; }
+      font-family: "Merriweather", Times, serif; }
     .post-type-archive .site-content .content-area .product-grid-container .product-info {
       text-align: center;
-      font-family: Merriweather, serif;
+      font-family: "Merriweather", Times, serif;
       font-size: 0.95rem; }
     .post-type-archive .site-content .content-area .product-grid-container ul {
       margin-left: 0;
@@ -1426,7 +1426,7 @@ object {
   font-size: 16px;
   position: relative;
   text-align: center;
-  font-family: "Novocento", sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   font-weight: normal;
   text-transform: none;
   letter-spacing: 0px; }
@@ -1434,13 +1434,13 @@ object {
     position: absolute;
     left: 0;
     padding-right: 2px;
-    background-color: white; }
+    background-color: #FFFFFF; }
   .post-type-archive h2 span:last-child {
     position: absolute;
     right: 0;
     top: 0;
     padding-left: 2px;
-    background-color: white; }
+    background-color: #FFFFFF; }
 
 .tax-product-type .site-content {
   width: 1120px;
@@ -1451,13 +1451,13 @@ object {
     .tax-product-type .site-content .content-area h1 {
       text-align: center;
       font-size: 2.4rem;
-      font-family: "Novocento", sans-serif;
+      font-family: "Novecento", Helvetica, sans-serif;
       text-transform: uppercase;
       font-weight: 600;
       color: #404040;
       letter-spacing: 2px; }
       .tax-product-type .site-content .content-area h1 .product-type-description p {
-        font-family: Merriweather, serif;
+        font-family: "Merriweather", Times, serif;
         color: #404040;
         font-size: 1rem;
         line-height: 1.75;
@@ -1467,12 +1467,12 @@ object {
     .tax-product-type .site-content .content-area .page-header {
       border-bottom: 1px dashed lightgrey; }
       .tax-product-type .site-content .content-area .page-header a {
-        font-family: Novecento;
+        font-family: "Novecento", Helvetica, sans-serif;
         text-transform: uppercase;
         font-size: 1.2rem; }
       .tax-product-type .site-content .content-area .page-header .shop-title {
         font-size: 2.4rem;
-        font-family: Novecento;
+        font-family: "Novecento", Helvetica, sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         color: #404040;
@@ -1500,10 +1500,10 @@ object {
           width: auto; }
     .tax-product-type .site-content .content-area .product-grid-container .product-meta {
       padding: 0.4rem 0.75rem;
-      font-family: Merriweather, serif; }
+      font-family: "Merriweather", Times, serif; }
     .tax-product-type .site-content .content-area .product-grid-container .product-info {
       text-align: center;
-      font-family: Merriweather, serif;
+      font-family: "Merriweather", Times, serif;
       font-size: 0.95rem; }
     .tax-product-type .site-content .content-area .product-grid-container ul {
       margin-left: 0;
@@ -1513,7 +1513,7 @@ object {
   font-size: 16px;
   position: relative;
   text-align: center;
-  font-family: "Novocento", sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   font-weight: normal;
   text-transform: none;
   letter-spacing: 0px; }
@@ -1521,13 +1521,13 @@ object {
     position: absolute;
     left: 0;
     padding-right: 2px;
-    background-color: white; }
+    background-color: #FFFFFF; }
   .tax-product-type h2 span:last-child {
     position: absolute;
     right: 0;
     top: 0;
     padding-left: 2px;
-    background-color: white; }
+    background-color: #FFFFFF; }
 
 .product-grid-list {
   display: -webkit-box;
@@ -1549,18 +1549,18 @@ object {
 .adventure-single-wrapper {
   padding: 2.5rem 1.5rem; }
   .adventure-single-wrapper .adventure-button {
-    border: 1px solid #fff;
+    border: 1px solid #FFFFFF;
     background-color: transparent;
-    color: #fff;
-    font-family: Novecento,sans-serif;
+    color: #FFFFFF;
+    font-family: "Novecento", Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1;
     padding: .75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase; }
   .adventure-single-wrapper .adventure-button:hover {
-    background-color: #248a83;
-    border-color: #248a83; }
+    background-color: #248A83;
+    border-color: #248A83; }
 
 .tax-product-type .site-content {
   width: 1120px;
@@ -1596,7 +1596,7 @@ object {
           .single-product .site-content .content-area .single-product-container .product-content-wrapper .entry-content p {
             margin-top: 0; }
         .single-product .site-content .content-area .single-product-container .product-content-wrapper .product-price {
-          font-family: Novecento, sans-serif;
+          font-family: "Novecento", Helvetica, sans-serif;
           font-size: 1.8rem; }
         .single-product .site-content .content-area .single-product-container .product-content-wrapper h1 {
           margin-top: 0;
@@ -1621,18 +1621,18 @@ object {
     padding: 20px 60px 0px 0px;
     width: 73%; }
     .page-id-60 .site-content .content-area .wpcf7 {
-      font-family: Novecento; }
+      font-family: "Novecento", Helvetica, sans-serif; }
     .page-id-60 .site-content .content-area h1 {
       font-size: 2.5rem; }
     .page-id-60 .site-content .content-area h2 {
       color: #404040; }
   .page-id-60 .site-content .wpcf7-form-control.wpcf7-submit {
-    background: #248a83;
+    background: #248A83;
     border: none;
     border-radius: 0;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: "Novecento", Helvetica, sans-serif;
     font-size: 14px;
     font-size: .9rem;
     padding: .75rem 1.5rem;
@@ -1647,7 +1647,7 @@ object {
     margin-left: 0;
     padding-left: 0; }
     .page-id-60 .site-content .widget-area ul a {
-      color: #248a83; }
+      color: #248A83; }
     .page-id-60 .site-content .widget-area ul a:hover {
       color: #2f1339; }
 
@@ -1669,12 +1669,12 @@ object {
       margin-left: 0;
       padding-left: 0; }
     .error404 .site-content .content-area .page-content a {
-      color: #248a83; }
+      color: #248A83; }
   .error404 .site-content .widget-area ul {
     margin-left: 0;
     padding-left: 0; }
     .error404 .site-content .widget-area ul a {
-      color: #248a83; }
+      color: #248A83; }
 
 .page-id-14 .site-content {
   margin-top: 0; }
@@ -1721,7 +1721,7 @@ object {
         margin-top: 0rem;
         max-width: 100%; }
       .search-results .site-content .content-area .entry-header a {
-        color: #248a83; }
+        color: #248A83; }
     .search-results .site-content .content-area .page-header {
       border-bottom: 1px solid #e1e1e1;
       margin-bottom: 2rem;
@@ -1732,28 +1732,28 @@ object {
       margin-left: 0;
       padding-left: 0; }
     .search-results .site-content .content-area .page-content a {
-      color: #248a83; }
+      color: #248A83; }
   .search-results .site-content .widget-area ul {
     margin-left: 0;
     padding-left: 0; }
     .search-results .site-content .widget-area ul a {
-      color: #248a83; }
+      color: #248A83; }
 
 .search-results .search-pagination {
-  font-family: Novecento, sans-serif;
+  font-family: "Novecento", Helvetica, sans-serif;
   text-transform: uppercase;
   margin-bottom: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid lightgrey; }
   .search-results .search-pagination a {
-    color: white; }
+    color: #FFFFFF; }
   .search-results .search-pagination a:visited {
     color: #FFFFFF; }
   .search-results .search-pagination .page-numbers.current {
     background-color: grey; }
   .search-results .search-pagination .page-numbers {
-    background-color: #248a83;
-    color: #ffffff;
+    background-color: #248A83;
+    color: #FFFFFF;
     display: inline-block;
     line-height: 1;
     padding: .5rem .75rem;
@@ -1766,7 +1766,7 @@ object {
     margin-top: 0;
     margin-bottom: 2rem;
     color: #FFFFFF;
-    font-family: Merriweather;
+    font-family: "Merriweather", Times, serif;
     font-weight: 400;
     text-transform: none;
     letter-spacing: 2px;
@@ -1776,7 +1776,7 @@ object {
     cursor: pointer; }
   .latest-journal-entries-wrapper h2 {
     text-align: center;
-    font-family: Novecento, sans-serif;
+    font-family: "Novecento", Helvetica, sans-serif;
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3rem;

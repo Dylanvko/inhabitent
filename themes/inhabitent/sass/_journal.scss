@@ -5,8 +5,8 @@
   h3 {
     margin-top: 0;
     margin-bottom: 2rem;
-    color: #FFFFFF;
-    font-family: Merriweather;
+    color: $color__lightest;
+    font-family: $font__secondary;
     font-weight: 400;
     text-transform: none;
     letter-spacing: 2px;
@@ -20,7 +20,7 @@
 
   h2 {
     text-align: center;
-		font-family: Novecento, sans-serif;
+		font-family: $font__main;
 		font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 3rem;
@@ -42,7 +42,7 @@
       background-position: 50% 50%;
       border-right: 20px; 
       border-right-style: solid;
-      border-right-color: #FFFFFF;
+      border-right-color: $color__lightest;
       font-size: 2.4rem;
     }
 
@@ -56,7 +56,7 @@
         background-size: cover;
         border-bottom: 20px; 
         border-bottom-style: solid;
-        border-bottom-color: #FFFFFF;
+        border-bottom-color: $color__lightest;
         font-size: 2rem;
       }
 
@@ -71,7 +71,7 @@
           background-size: cover;
           border-right: 10px; 
           border-right-style: solid;
-          border-right-color: #FFFFFF;
+          border-right-color: $color__lightest;
           font-size: 1.4rem;
         }
 
@@ -83,7 +83,7 @@
           background-size: cover;
           border-left: 10px; 
           border-left-style: solid;
-          border-left-color: #FFFFFF;
+          border-left-color: $color__lightest;
           font-size: 1.4rem;
         }
       }
