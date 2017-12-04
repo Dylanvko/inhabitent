@@ -5,6 +5,5 @@
 		</label>
 	
 			<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
-		</button>
 	</fieldset>
 </form>

@@ -1,9 +1,9 @@
 <?php
 /**
- * The header for our theme.
- *
- * @package RED_Starter_Theme
- */
+* The header for our theme.
+*
+* @package RED_Starter_Theme
+*/
 
 ?>
 	<!DOCTYPE html>
@@ -31,6 +31,7 @@
 							<a href="<? echo home_url('/'); ?>" rel="home">
 								<h1 class="site-title">Inhabitent</h1>
 							</a>
+
 						</div>
 					</div>
 					<!-- .site-branding -->
@@ -42,15 +43,16 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav>
 					<!-- #site-navigation -->
-				<div class='header-search-wrapper'>
-					<div class='header-search'><i class="fa fa-search" aria-hidden="true"></i></div>
-				<div class='search-form'>
-					<?php get_search_form(); ?>
-				</div>
+					<div class='header-search-wrapper'>
+						<div class='header-search'>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+						<div class='search-form'>
+							<?php get_search_form(); ?>
+						</div>
+					</div>
 				</div>
 			</header>
 			<!-- #masthead -->
 
 			<div id="content" class="site-content">
-
-			
